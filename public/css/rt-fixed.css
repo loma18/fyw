@@ -1,0 +1,43 @@
+/*定义基础样式变量*/
+#rt-fixed {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+#rt-fixed li {
+  width: 35px;
+  height: 35px;
+  background: #7A6E6E url('../images/icon_rbar20160517.png') no-repeat -1px 0;
+  margin-bottom: 1px;
+  /*配合弹出框做相对定位*/
+  position: relative;
+}
+#rt-fixed li:last-child {
+  background: #7A6E6E url('../images/to-top.png') no-repeat 8px 8px;
+  background-size: 20px 20px;
+}
+#rt-fixed li a:first-child {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+#rt-fixed li a:last-child {
+  display: none;
+}
+#rt-fixed li:hover {
+  background-color: #e4393c;
+}
+#rt-fixed li:hover a:last-child {
+  display: block;
+  width: 68px;
+  height: 35px;
+  line-height: 35px;
+  background: #e4393c;
+  padding-left: 3px;
+  color: #fff;
+  position: absolute;
+  right: 35px;
+  top: 0;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>房源网-登录</title>
+    <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+<!--头部-->
+<header id="top"></header>
+<!--2、主体部分-->
+<section id="main">
+    <div class="lf">
+        <img src="images/login.png" alt=""/>
+        <a href="#">马上加入</a>
+    </div>
+    <div class="rt">
+        <form action="">
+            <ul>
+                <li>
+                    <div>
+                        <input type="radio" id="chk" name="login" checked="checked"/>
+                        <label for="chk">普通登录</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="chkPhone" name="login"/>
+                        <label for="chkPhone">手机动态登录</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="tips_lg"></span>
+                        <span class="glyphicon glyphicon-user"></span>
+                        <input type="text" placeholder="用户名/邮箱/手机号码" id="uname_lg"/>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="glyphicon glyphicon-eye-open"></span>
+                        <input type="password" placeholder="密码" id="upwd_lg"/>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="chkAuto"/>
+                        <label for="chkAuto">自动登录</label>
+                        <a href="#">找回密码</a>
+                        <a href="register.html">免费注册</a>
+                    </div>
+                </li>
+                <li>
+                    <div><input type="button" value="登录" id="btn_lg"/></div>
+                </li>
+            </ul>
+        </form>
+        <div>
+            <a href="http://w.qq.com/"><span></span>QQ登录</a>
+            <a href="https://wx.qq.com/"><span></span>微信登录</a>
+            <a href="http://weibo.com/"><span></span>微博登录</a>
+            <a href="https://passport.baidu.com/v2/?login"><span></span>百度登录</a>
+        </div>
+    </div>
+</section>
+<!--3、关于我们-->
+<footer id="footer"></footer>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/login-self.js"></script>
+</body>
+</html>

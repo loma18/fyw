@@ -1,0 +1,1742 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-asterisk:before {
+  content: "\2a";
+}
+.glyphicon-plus:before {
+  content: "\2b";
+}
+.glyphicon-euro:before,
+.glyphicon-eur:before {
+  content: "\20ac";
+}
+.glyphicon-minus:before {
+  content: "\2212";
+}
+.glyphicon-cloud:before {
+  content: "\2601";
+}
+.glyphicon-envelope:before {
+  content: "\2709";
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-glass:before {
+  content: "\e001";
+}
+.glyphicon-music:before {
+  content: "\e002";
+}
+.glyphicon-search:before {
+  content: "\e003";
+}
+.glyphicon-heart:before {
+  content: "\e005";
+}
+.glyphicon-star:before {
+  content: "\e006";
+}
+.glyphicon-star-empty:before {
+  content: "\e007";
+}
+.glyphicon-user:before {
+  content: "\e008";
+}
+.glyphicon-film:before {
+  content: "\e009";
+}
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+.glyphicon-th:before {
+  content: "\e011";
+}
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+.glyphicon-ok:before {
+  content: "\e013";
+}
+.glyphicon-remove:before {
+  content: "\e014";
+}
+.glyphicon-zoom-in:before {
+  content: "\e015";
+}
+.glyphicon-zoom-out:before {
+  content: "\e016";
+}
+.glyphicon-off:before {
+  content: "\e017";
+}
+.glyphicon-signal:before {
+  content: "\e018";
+}
+.glyphicon-cog:before {
+  content: "\e019";
+}
+.glyphicon-trash:before {
+  content: "\e020";
+}
+.glyphicon-home:before {
+  content: "\e021";
+}
+.glyphicon-file:before {
+  content: "\e022";
+}
+.glyphicon-time:before {
+  content: "\e023";
+}
+.glyphicon-road:before {
+  content: "\e024";
+}
+.glyphicon-download-alt:before {
+  content: "\e025";
+}
+.glyphicon-download:before {
+  content: "\e026";
+}
+.glyphicon-upload:before {
+  content: "\e027";
+}
+.glyphicon-inbox:before {
+  content: "\e028";
+}
+.glyphicon-play-circle:before {
+  content: "\e029";
+}
+.glyphicon-repeat:before {
+  content: "\e030";
+}
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+.glyphicon-lock:before {
+  content: "\e033";
+}
+.glyphicon-flag:before {
+  content: "\e034";
+}
+.glyphicon-headphones:before {
+  content: "\e035";
+}
+.glyphicon-volume-off:before {
+  content: "\e036";
+}
+.glyphicon-volume-down:before {
+  content: "\e037";
+}
+.glyphicon-volume-up:before {
+  content: "\e038";
+}
+.glyphicon-qrcode:before {
+  content: "\e039";
+}
+.glyphicon-barcode:before {
+  content: "\e040";
+}
+.glyphicon-tag:before {
+  content: "\e041";
+}
+.glyphicon-tags:before {
+  content: "\e042";
+}
+.glyphicon-book:before {
+  content: "\e043";
+}
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+.glyphicon-print:before {
+  content: "\e045";
+}
+.glyphicon-camera:before {
+  content: "\e046";
+}
+.glyphicon-font:before {
+  content: "\e047";
+}
+.glyphicon-bold:before {
+  content: "\e048";
+}
+.glyphicon-italic:before {
+  content: "\e049";
+}
+.glyphicon-text-height:before {
+  content: "\e050";
+}
+.glyphicon-text-width:before {
+  content: "\e051";
+}
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+.glyphicon-align-center:before {
+  content: "\e053";
+}
+.glyphicon-align-right:before {
+  content: "\e054";
+}
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+.glyphicon-list:before {
+  content: "\e056";
+}
+.glyphicon-indent-left:before {
+  content: "\e057";
+}
+.glyphicon-indent-right:before {
+  content: "\e058";
+}
+.glyphicon-facetime-video:before {
+  content: "\e059";
+}
+.glyphicon-picture:before {
+  content: "\e060";
+}
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+.glyphicon-adjust:before {
+  content: "\e063";
+}
+.glyphicon-tint:before {
+  content: "\e064";
+}
+.glyphicon-edit:before {
+  content: "\e065";
+}
+.glyphicon-share:before {
+  content: "\e066";
+}
+.glyphicon-check:before {
+  content: "\e067";
+}
+.glyphicon-move:before {
+  content: "\e068";
+}
+.glyphicon-step-backward:before {
+  content: "\e069";
+}
+.glyphicon-fast-backward:before {
+  content: "\e070";
+}
+.glyphicon-backward:before {
+  content: "\e071";
+}
+.glyphicon-play:before {
+  content: "\e072";
+}
+.glyphicon-pause:before {
+  content: "\e073";
+}
+.glyphicon-stop:before {
+  content: "\e074";
+}
+.glyphicon-forward:before {
+  content: "\e075";
+}
+.glyphicon-fast-forward:before {
+  content: "\e076";
+}
+.glyphicon-step-forward:before {
+  content: "\e077";
+}
+.glyphicon-eject:before {
+  content: "\e078";
+}
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+.glyphicon-screenshot:before {
+  content: "\e087";
+}
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+.glyphicon-arrow-up:before {
+  content: "\e093";
+}
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+.glyphicon-resize-full:before {
+  content: "\e096";
+}
+.glyphicon-resize-small:before {
+  content: "\e097";
+}
+.glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+.glyphicon-gift:before {
+  content: "\e102";
+}
+.glyphicon-leaf:before {
+  content: "\e103";
+}
+.glyphicon-fire:before {
+  content: "\e104";
+}
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+.glyphicon-eye-close:before {
+  content: "\e106";
+}
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+.glyphicon-plane:before {
+  content: "\e108";
+}
+.glyphicon-calendar:before {
+  content: "\e109";
+}
+.glyphicon-random:before {
+  content: "\e110";
+}
+.glyphicon-comment:before {
+  content: "\e111";
+}
+.glyphicon-magnet:before {
+  content: "\e112";
+}
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+.glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+.glyphicon-folder-close:before {
+  content: "\e117";
+}
+.glyphicon-folder-open:before {
+  content: "\e118";
+}
+.glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+.glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+.glyphicon-hdd:before {
+  content: "\e121";
+}
+.glyphicon-bullhorn:before {
+  content: "\e122";
+}
+.glyphicon-bell:before {
+  content: "\e123";
+}
+.glyphicon-certificate:before {
+  content: "\e124";
+}
+.glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+.glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+.glyphicon-hand-right:before {
+  content: "\e127";
+}
+.glyphicon-hand-left:before {
+  content: "\e128";
+}
+.glyphicon-hand-up:before {
+  content: "\e129";
+}
+.glyphicon-hand-down:before {
+  content: "\e130";
+}
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+.glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+.glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+.glyphicon-globe:before {
+  content: "\e135";
+}
+.glyphicon-wrench:before {
+  content: "\e136";
+}
+.glyphicon-tasks:before {
+  content: "\e137";
+}
+.glyphicon-filter:before {
+  content: "\e138";
+}
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+.glyphicon-fullscreen:before {
+  content: "\e140";
+}
+.glyphicon-dashboard:before {
+  content: "\e141";
+}
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+.glyphicon-link:before {
+  content: "\e144";
+}
+.glyphicon-phone:before {
+  content: "\e145";
+}
+.glyphicon-pushpin:before {
+  content: "\e146";
+}
+.glyphicon-usd:before {
+  content: "\e148";
+}
+.glyphicon-gbp:before {
+  content: "\e149";
+}
+.glyphicon-sort:before {
+  content: "\e150";
+}
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+.glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+.glyphicon-unchecked:before {
+  content: "\e157";
+}
+.glyphicon-expand:before {
+  content: "\e158";
+}
+.glyphicon-collapse-down:before {
+  content: "\e159";
+}
+.glyphicon-collapse-up:before {
+  content: "\e160";
+}
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+.glyphicon-flash:before {
+  content: "\e162";
+}
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+.glyphicon-new-window:before {
+  content: "\e164";
+}
+.glyphicon-record:before {
+  content: "\e165";
+}
+.glyphicon-save:before {
+  content: "\e166";
+}
+.glyphicon-open:before {
+  content: "\e167";
+}
+.glyphicon-saved:before {
+  content: "\e168";
+}
+.glyphicon-import:before {
+  content: "\e169";
+}
+.glyphicon-export:before {
+  content: "\e170";
+}
+.glyphicon-send:before {
+  content: "\e171";
+}
+.glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+.glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+.glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+.glyphicon-floppy-save:before {
+  content: "\e175";
+}
+.glyphicon-floppy-open:before {
+  content: "\e176";
+}
+.glyphicon-credit-card:before {
+  content: "\e177";
+}
+.glyphicon-transfer:before {
+  content: "\e178";
+}
+.glyphicon-cutlery:before {
+  content: "\e179";
+}
+.glyphicon-header:before {
+  content: "\e180";
+}
+.glyphicon-compressed:before {
+  content: "\e181";
+}
+.glyphicon-earphone:before {
+  content: "\e182";
+}
+.glyphicon-phone-alt:before {
+  content: "\e183";
+}
+.glyphicon-tower:before {
+  content: "\e184";
+}
+.glyphicon-stats:before {
+  content: "\e185";
+}
+.glyphicon-sd-video:before {
+  content: "\e186";
+}
+.glyphicon-hd-video:before {
+  content: "\e187";
+}
+.glyphicon-subtitles:before {
+  content: "\e188";
+}
+.glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+.glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+.glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+.glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+.glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+.glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+.glyphicon-registration-mark:before {
+  content: "\e195";
+}
+.glyphicon-cloud-download:before {
+  content: "\e197";
+}
+.glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+.glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+.glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+.glyphicon-cd:before {
+  content: "\e201";
+}
+.glyphicon-save-file:before {
+  content: "\e202";
+}
+.glyphicon-open-file:before {
+  content: "\e203";
+}
+.glyphicon-level-up:before {
+  content: "\e204";
+}
+.glyphicon-copy:before {
+  content: "\e205";
+}
+.glyphicon-paste:before {
+  content: "\e206";
+}
+.glyphicon-alert:before {
+  content: "\e209";
+}
+.glyphicon-equalizer:before {
+  content: "\e210";
+}
+.glyphicon-king:before {
+  content: "\e211";
+}
+.glyphicon-queen:before {
+  content: "\e212";
+}
+.glyphicon-pawn:before {
+  content: "\e213";
+}
+.glyphicon-bishop:before {
+  content: "\e214";
+}
+.glyphicon-knight:before {
+  content: "\e215";
+}
+.glyphicon-baby-formula:before {
+  content: "\e216";
+}
+.glyphicon-tent:before {
+  content: "\26fa";
+}
+.glyphicon-blackboard:before {
+  content: "\e218";
+}
+.glyphicon-bed:before {
+  content: "\e219";
+}
+.glyphicon-apple:before {
+  content: "\f8ff";
+}
+.glyphicon-erase:before {
+  content: "\e221";
+}
+.glyphicon-hourglass:before {
+  content: "\231b";
+}
+.glyphicon-lamp:before {
+  content: "\e223";
+}
+.glyphicon-duplicate:before {
+  content: "\e224";
+}
+.glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+.glyphicon-scissors:before {
+  content: "\e226";
+}
+.glyphicon-bitcoin:before {
+  content: "\e227";
+}
+.glyphicon-btc:before {
+  content: "\e227";
+}
+.glyphicon-xbt:before {
+  content: "\e227";
+}
+.glyphicon-yen:before {
+  content: "\00a5";
+}
+.glyphicon-jpy:before {
+  content: "\00a5";
+}
+.glyphicon-ruble:before {
+  content: "\20bd";
+}
+.glyphicon-rub:before {
+  content: "\20bd";
+}
+.glyphicon-scale:before {
+  content: "\e230";
+}
+.glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+.glyphicon-education:before {
+  content: "\e233";
+}
+.glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+.glyphicon-option-vertical:before {
+  content: "\e235";
+}
+.glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+.glyphicon-oil:before {
+  content: "\e238";
+}
+.glyphicon-grain:before {
+  content: "\e239";
+}
+.glyphicon-sunglasses:before {
+  content: "\e240";
+}
+.glyphicon-text-size:before {
+  content: "\e241";
+}
+.glyphicon-text-color:before {
+  content: "\e242";
+}
+.glyphicon-text-background:before {
+  content: "\e243";
+}
+.glyphicon-object-align-top:before {
+  content: "\e244";
+}
+.glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+.glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+.glyphicon-object-align-left:before {
+  content: "\e247";
+}
+.glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+.glyphicon-object-align-right:before {
+  content: "\e249";
+}
+.glyphicon-triangle-right:before {
+  content: "\e250";
+}
+.glyphicon-triangle-left:before {
+  content: "\e251";
+}
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
+.glyphicon-console:before {
+  content: "\e254";
+}
+.glyphicon-superscript:before {
+  content: "\e255";
+}
+.glyphicon-subscript:before {
+  content: "\e256";
+}
+.glyphicon-menu-left:before {
+  content: "\e257";
+}
+.glyphicon-menu-right:before {
+  content: "\e258";
+}
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+.glyphicon-menu-up:before {
+  content: "\e260";
+}
+/*1、头部及全局*/
+/*全局设置*/
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px simsun, Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  vertical-align: bottom;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+/*定义基础样式变量*/
+/*css样式初始化*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  color: #333333;
+  text-decoration: none;
+}
+a:hover {
+  color: #e4393c;
+}
+/*1、头部*/
+#top {
+  height: 50px;
+  line-height: 50px;
+  background-image: linear-gradient(to bottom, #be0000 0%, #d80000 100%);
+  /*头部#top结束*/
+}
+#top #top-box {
+  width: 1211px;
+  margin: 0 auto;
+  /*logo*/
+  /*头部列表*/
+  /*头部#top-box结束*/
+}
+#top #top-box > a {
+  float: left;
+}
+#top #top-box > a img {
+  height: 34px;
+  vertical-align: middle;
+}
+#top #top-box > ul {
+  /*下拉框向上箭头*/
+  /*买房*/
+  /*右侧登陆*/
+  /*第一个子元素ul结束*/
+}
+#top #top-box > ul > li {
+  float: left;
+  padding: 0 10px;
+  text-align: center;
+}
+#top #top-box > ul > li > a {
+  color: #fcf0f0;
+  font-weight: bold;
+}
+#top #top-box > ul > li:hover {
+  background: #B30000;
+}
+#top #top-box > ul li.address {
+  padding-right: 18px;
+}
+#top #top-box > ul li.address:hover .address-box {
+  display: block;
+  z-index: 30;
+}
+#top #top-box > ul li.address:hover > span.caret {
+  border: 9px solid transparent;
+  border-bottom-color: white;
+  bottom: 0;
+  left: 18px;
+}
+#top #top-box > ul li.buy {
+  /*配合下拉框做相对定位、右内边距*/
+  position: relative;
+  padding-right: 18px;
+}
+#top #top-box > ul li.buy ul.buy-box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border: 1px solid #b2b2b2;
+  border-top: none;
+  background-color: white;
+  display: none;
+}
+#top #top-box > ul li.buy ul.buy-box li {
+  height: 30px;
+  line-height: 30px;
+}
+#top #top-box > ul li.buy:hover > span.caret {
+  bottom: 0;
+  left: 18px;
+  border: 9px solid transparent;
+  border-bottom-color: white;
+}
+#top #top-box > ul li.buy:hover .buy-box {
+  display: block;
+  z-index: 10;
+}
+#top #top-box > ul li.lk,
+#top #top-box > ul li.order {
+  padding: 0 3px;
+}
+#top #top-box > ul li.lk span,
+#top #top-box > ul li.order span {
+  /*宽度、高度、背景、绝对定位*/
+  position: relative;
+  top: 4px;
+  left: 0px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icon-dingd.png") no-repeat;
+}
+#top #top-box > ul li.order span {
+  height: 18px;
+  background-position: -1px -16px;
+}
+#top #top-box > ul li.login {
+  position: relative;
+}
+#top #top-box > ul li.login > p {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 10000;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+}
+#top #top-box > ul li.login > p span {
+  position: absolute;
+  top: -18px;
+  left: 15px;
+  z-index: 1;
+  border: 9px solid transparent;
+  border-bottom-color: white;
+}
+#top #top-box > ul li.login > p a {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+}
+#top #top-box > ul li.login > p:hover span {
+  border-bottom-color: #ddd;
+}
+#top #top-box > ul li.login > p:hover a {
+  background: #ddd;
+}
+#top #top-box > ul li #login {
+  color: #000;
+  font-weight: bold;
+}
+#top #top-box > ul li #login a {
+  color: #fcf0f0;
+  font-weight: bold;
+}
+#top #top-box > ul li.login div.login-box {
+  /*默认模态框隐藏*/
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.7);
+}
+#top #top-box > ul li.login div.login-box > div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 420px;
+  height: 420px;
+  margin-top: -210px;
+  margin-left: -220px;
+  background: #fff;
+}
+#top #top-box > ul li.login div.login-box > div h2 {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+#top #top-box > ul li.login div.login-box > div form div {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+#top #top-box > ul li.login div.login-box > div form div input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px 3px 5px 30px;
+}
+#top #top-box > ul li.login div.login-box > div form div span {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  color: #999999;
+}
+#top #top-box > ul li.login div.login-box > div form div b.tips_new {
+  display: none;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 200px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #e4393c;
+  padding: 0 5px;
+  font-size: 1em;
+  text-align: left;
+  color: #e4393c;
+}
+#top #top-box > ul li.login div.login-box > div > div:last-child {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}
+#top #top-box > ul li.login div.login-box > div > div:last-child a {
+  color: #e4393c;
+}
+#top #top-box > ul li.login div.login-box > div > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: #999999;
+  color: #fff;
+  cursor: pointer;
+}
+#top #top-box > ul li.login div.login-box > div > span:hover {
+  background: #666666;
+}
+#top #top-box > ul li.register {
+  /*去内边距*/
+  padding: 0;
+}
+#top #top-box > ul li.register a {
+  /*左右内边距、边框*/
+  padding: 0 10px;
+  border-left: 1px solid white;
+}
+#top #top-box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*可复用样式*/
+span.caret {
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-top-color: #f0f0f0;
+  position: absolute;
+  bottom: 35%;
+  right: 3px;
+  z-index: 10;
+}
+.address {
+  /*配合下拉框做相对定位*/
+  position: relative;
+}
+.address ul.address-box {
+  /*宽度、边框、背景颜色、左右内边距、绝对定位、默认隐藏*/
+  position: absolute;
+  left: 0;
+  display: none;
+  width: 248px;
+  border: 1px solid #b2b2b2;
+  border-top: none;
+  background: white;
+  padding: 0 3px;
+}
+.address ul.address-box li {
+  float: left;
+  width: 25%;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+/*可复用样式结束*/
+/*右侧绝对定位*/
+/*定义基础样式变量*/
+#rt-fixed {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+#rt-fixed li {
+  width: 35px;
+  height: 35px;
+  background: #7A6E6E url('../images/icon_rbar20160517.png') no-repeat -1px 0;
+  margin-bottom: 1px;
+  /*配合弹出框做相对定位*/
+  position: relative;
+}
+#rt-fixed li:last-child {
+  background: #7A6E6E url('../images/to-top.png') no-repeat 8px 8px;
+  background-size: 20px 20px;
+}
+#rt-fixed li a:first-child {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+#rt-fixed li a:last-child {
+  display: none;
+}
+#rt-fixed li:hover {
+  background-color: #e4393c;
+}
+#rt-fixed li:hover a:last-child {
+  display: block;
+  width: 68px;
+  height: 35px;
+  line-height: 35px;
+  background: #e4393c;
+  padding-left: 3px;
+  color: #fff;
+  position: absolute;
+  right: 35px;
+  top: 0;
+}
+/*2、top-main部分*/
+#top-main {
+  background: #F3F3F3;
+  padding-top: 20px;
+}
+#top-main > div {
+  /*配合子元素搜索框做相对定位*/
+  position: relative;
+  /*宽度，背景颜色，居中，下外边距*/
+  width: 1211px;
+  margin: 0 auto;
+  overflow: hidden;
+  /*搜索框部分*/
+}
+#top-main > div div.search-box {
+  /*绝对定位，宽度，背景颜色，内边距，边框倒角*/
+  width: 40%;
+  background: #D10101;
+  padding: 2px 3px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+#top-main > div div.search-box input.txtSearch {
+  /*宽度，去轮廓线，上下左内边距*/
+  width: 85%;
+  height: 2.8em;
+  line-height: 2.8em;
+  border: none;
+  outline: none;
+  padding: 5px 0 5px 5px;
+}
+#top-main > div div.search-box button.btnSearch {
+  /*背景色，去边框，调整内边距，字体颜色，大小*/
+  background: #D10101;
+  border: none;
+  margin-top: 1px;
+  color: #fff;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+#top-main > div div.search-box button.btnSearch:hover {
+  background: #c00;
+}
+#top-main > div h3.lf {
+  width: 55%;
+  height: 2.8em;
+  line-height: 2.8em;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+#top-main > div h3.lf b {
+  color: #c00;
+  text-decoration: underline;
+}
+/*2、top-main部分结束*/
+/*3、条件筛选*/
+#search {
+  /*宽度，水平居中*/
+  width: 1211px;
+  height: 280px;
+  margin: 0 auto;
+}
+#search > ul.bread-crumb {
+  /*高度，行高*/
+  height: 50px;
+  line-height: 50px;
+}
+#search > ul.bread-crumb li {
+  float: left;
+  margin-right: 5px;
+  color: #999999;
+}
+#search > ul.bread-crumb li a:hover {
+  color: #e4393c;
+}
+#search > ul:last-child > li {
+  /*左浮动，配合菜单做相对定位*/
+  width: 150px;
+  height: 35px;
+  float: left;
+  position: relative;
+}
+#search > ul:last-child > li > a {
+  /*边框，内边距，字体大小*/
+  width: 152px;
+  border: 1px solid #ddd;
+  padding: 5px 21px 5px 25px;
+  font-size: 1.5em;
+  color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#search > ul:last-child > li > a span {
+  /*变行内块，宽度，高度*/
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon_pic.png) no-repeat;
+}
+#search > ul:last-child > li > ul {
+  /*高度，边框，内边距，绝对定位*/
+  width: 1211px;
+  height: 170px;
+  border: 1px solid #ddd;
+  padding: 15px 10px;
+  position: absolute;
+  bottom: -170px;
+}
+#search > ul:last-child > li > ul li {
+  /*宽度，高度，行高，左右外边距*/
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+}
+#search > ul:last-child > li > ul li span {
+  padding-right: 8px;
+  color: #666666;
+}
+#search > ul:last-child > li > ul li a {
+  display: inline-block;
+  margin: 0 8px;
+  font-weight: normal !important;
+}
+#search > ul:last-child > li > ul li a:hover,
+#search > ul:last-child > li > ul li a.hover {
+  color: #e4393c;
+}
+#search > ul:last-child > li > ul li:nth-child(3) form {
+  /*右浮动*/
+  width: 20%;
+  float: right;
+  position: relative;
+  color: #666666;
+}
+#search > ul:last-child > li > ul li:nth-child(3) form input {
+  width: 35%;
+  padding-left: 12px;
+}
+#search > ul:last-child > li > ul li:nth-child(3) form button {
+  border: 1px solid #999999;
+  background: #fff;
+  color: #666666;
+}
+#search > ul:last-child > li > ul li:nth-child(3) form span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 3px;
+  color: #666666;
+}
+#search > ul:last-child > li > ul li:nth-child(3) form span + span {
+  left: 44%;
+}
+#search > ul:last-child > li + li {
+  margin-left: 1px;
+}
+#search > ul:last-child > li + li > a span {
+  background-position: 0 -16px;
+}
+#search > ul:last-child > li + li ul:last-child {
+  display: none;
+}
+#search > ul:last-child > li + li ul > li:last-child div {
+  display: inline-block;
+}
+#search > ul:last-child li.hover a {
+  /*下边框，颜色，加粗，z-index*/
+  border-bottom: 1px solid white;
+  color: #000;
+  font-weight: bold;
+  z-index: 10;
+}
+/*3、条件筛选结束*/
+/*4、主体部分*/
+#main {
+  /*宽度，水平居中*/
+  width: 1211px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#main #main-lf {
+  /*宽度*/
+  width: 72%;
+}
+#main #main-lf div.main-nav {
+  /*高度，行高，背景，边框，相对定位*/
+  height: 45px;
+  line-height: 45px;
+  background: #fbfbfb;
+  margin-bottom: 15px;
+}
+#main #main-lf div.main-nav > a {
+  /*浮动，宽度，高度，边框，背景,内边距*/
+  float: left;
+  width: 18%;
+  height: 45px;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 0 20px;
+}
+#main #main-lf div.main-nav > a + a {
+  margin-left: -1px;
+}
+#main #main-lf div.main-nav > a.current {
+  border-bottom: none;
+  background: #fff;
+  color: #e4393c;
+}
+#main #main-lf div.main-nav > ul.lf {
+  width: 64%;
+  height: 45px;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+#main #main-lf div.main-nav > ul.lf li {
+  float: right;
+}
+#main #main-lf div.main-nav > ul.lf li a {
+  padding: 0 20px;
+  font-size: 0.8em;
+}
+#main #main-lf div.main-nav > ul.lf li a span {
+  display: inline-block;
+  width: 9px;
+  height: 10px;
+  background: url(../images/arrow_rank.png);
+  margin-bottom: -2px;
+}
+#main #main-lf div.main-nav > ul.lf li > span {
+  padding: 0 20px;
+}
+#main #main-lf div.main-nav > ul.lf li > span b.pageno {
+  color: #e4393c;
+}
+#main #main-lf div.main-nav > ul.lf li:nth-child(3) a span {
+  background-position: 0 -10px;
+}
+#main #main-lf div.main-nav > ul.lf li.current a {
+  color: #e4393c;
+}
+#main #main-lf div.main-nav > ul.lf li.current span {
+  background-position: 0 -20px;
+}
+#main #main-lf div.main-nav > ul.lf li:nth-child(3).current a span {
+  background-position: 0 -30px;
+}
+#main #main-lf ul.main-box {
+  margin-bottom: 20px;
+}
+#main #main-lf ul.main-box > li {
+  width: 100%;
+  border-top: 1px solid #f7f1f1;
+  border-bottom: 1px solid #f7f1f1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#main #main-lf ul.main-box > li > div {
+  width: 78%;
+  /*列表简介*/
+  /*列表右边价格及电话*/
+}
+#main #main-lf ul.main-box > li > div div.lf h3 {
+  height: 34px;
+  line-height: 34px;
+}
+#main #main-lf ul.main-box > li > div div.lf h3 a:nth-child(2) {
+  display: inline-block;
+  width: 75px;
+  height: 15px;
+  background: url("../images/iconlist_1.png") -123px -239px;
+  margin-bottom: -2px;
+}
+#main #main-lf ul.main-box > li > div div.lf h3 a:last-child {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #999999;
+}
+#main #main-lf ul.main-box > li > div div.lf h3 a:hover {
+  color: #e4393c;
+}
+#main #main-lf ul.main-box > li > div div.lf p a {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #999999;
+}
+#main #main-lf ul.main-box > li > div div.lf p a:hover {
+  color: #e4393c;
+}
+#main #main-lf ul.main-box > li > div div.lf p span {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 3px;
+  color: #999999;
+}
+#main #main-lf ul.main-box > li > div div.lf p span.current,
+#main #main-lf ul.main-box > li > div div.lf p span:hover {
+  border-color: #e4393c;
+  color: #e4393c;
+}
+#main #main-lf ul.main-box > li > div div.rt {
+  text-align: center;
+}
+#main #main-lf ul.main-box > li > div div.rt h1 {
+  height: 55px;
+  line-height: 55px;
+  padding-left: 15px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #e4393c;
+}
+#main #main-lf ul.main-box > li > div div.rt h1 span {
+  font-size: 0.5em;
+  font-weight: normal;
+  color: #999999;
+}
+#main #main-lf ul.main-box > li > div div.rt h3 {
+  height: 35px;
+  line-height: 35px;
+  padding-right: 10px;
+  color: #666666;
+}
+#main #main-lf ul.main-box > li > div div.rt h3 small {
+  font-size: 0.1em;
+}
+#main #main-lf ul.main-box > li > div div.rt p {
+  /*默认隐藏*/
+  display: none;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 15px;
+}
+#main #main-lf ul.main-box > li > div div.rt p i {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  transition: all .5s linear;
+  background: #999999;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-style: normal;
+  opacity: 0;
+}
+#main #main-lf ul.main-box > li > div div.rt p a {
+  color: #999999;
+}
+#main #main-lf ul.main-box > li > div div.rt p a span:hover,
+#main #main-lf ul.main-box > li > div div.rt p a span.hover {
+  color: #e4393c;
+}
+#main #main-lf ul.main-box > li:hover {
+  background: rgba(250, 250, 250, 0.7);
+}
+#main #main-lf ul.main-box > li.hover div > div.rt > p {
+  display: block;
+}
+#main #main-lf ul.main-box > li + li {
+  margin-top: -1px;
+}
+#main #main-lf ul.main-box > li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#main #main-lf div.page-box ul {
+  width: 100%;
+}
+#main #main-lf div.page-box ul li:first-child {
+  float: left;
+}
+#main #main-lf div.page-box ul li:first-child b {
+  color: #e4393c;
+}
+#main #main-lf div.page-box ul li.pages {
+  float: right;
+}
+#main #main-lf div.page-box ul li.pages a {
+  float: left;
+  border: 1px solid #999999;
+  padding: 2px 8px;
+  margin-right: 5px;
+  text-align: center;
+}
+#main #main-lf div.page-box ul li.pages a:nth-child(1),
+#main #main-lf div.page-box ul li.pages a:nth-child(2) {
+  display: none;
+}
+#main #main-lf div.page-box ul li.pages a:hover,
+#main #main-lf div.page-box ul li.pages a.hover {
+  border-color: #e4393c;
+  background: #e4393c;
+  color: #fff;
+}
+#main #main-rt {
+  width: 26%;
+  /*购房技巧*/
+  /*热评榜*/
+}
+#main #main-rt h2 {
+  border-bottom: 2px solid #e4393c;
+}
+#main #main-rt h2 a:nth-child(2) {
+  float: right;
+  font-size: 0.5em;
+}
+#main #main-rt > div:first-child {
+  border-bottom: 1px solid #eee;
+}
+#main #main-rt > div:first-child > ul li {
+  height: 30px;
+  line-height: 30px;
+}
+#main #main-rt > div:first-child > ul li a {
+  font-size: 0.9em;
+}
+#main #main-rt > div:first-child > ul li a:hover {
+  color: #999999;
+}
+#main #main-rt > div:first-child li:hover {
+  background: #eee;
+}
+#main #main-rt > div.hot-comment {
+  border: 1px solid #eee;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+#main #main-rt > div.hot-comment ul {
+  padding: 5px 10px 0 0;
+  /*鼠标悬浮时显示*/
+}
+#main #main-rt > div.hot-comment ul li div:first-child {
+  height: 25px;
+  line-height: 25px;
+}
+#main #main-rt > div.hot-comment ul li div:first-child p {
+  float: left;
+  width: 40%;
+  height: 25px;
+  line-height: 25px;
+  font-size: 0.8em;
+  color: #333333;
+}
+#main #main-rt > div.hot-comment ul li div:first-child p span {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  background: #e4393c;
+  padding: 0 6px;
+  margin: 3px 5px;
+  font-size: 1.2em;
+  color: #fff;
+}
+#main #main-rt > div.hot-comment ul li div:first-child p + p {
+  width: 60%;
+}
+#main #main-rt > div.hot-comment ul li div:first-child p + p span {
+  width: 83px;
+  height: 12px;
+  margin-top: 6px;
+  background: none;
+}
+#main #main-rt > div.hot-comment ul li div:first-child p + p span img {
+  float: left;
+  width: 12px;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+#main #main-rt > div.hot-comment ul li div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#main #main-rt > div.hot-comment ul li.hover div:first-child {
+  display: none;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) {
+  display: none;
+  padding: 5px 10px 0 0;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) > a:first-child {
+  float: left;
+  margin: 0 5px;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) > a:nth-child(2) {
+  float: left;
+  height: 40px;
+  line-height: 22px;
+  color: #333333;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) > a:nth-child(2) span {
+  float: left;
+  height: 18px;
+  line-height: 18px;
+  background: #e4393c;
+  padding: 0 5px;
+  margin: 1px 5px;
+  font-size: 1.2em;
+  color: #fff;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) > a:nth-child(2) span.star {
+  width: 83px;
+  height: 12px;
+  margin-top: 4px;
+  padding-left: 0;
+  background: none;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) > a:nth-child(2) span.star img {
+  float: left;
+  width: 12px;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) > a:nth-child(2) span:last-child {
+  background: none;
+  color: #333333;
+  font-size: 1em;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) a:hover span:last-child {
+  color: #e4393c;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) p {
+  float: left;
+  padding: 5px 0 0 5px;
+}
+#main #main-rt > div.hot-comment ul li div:nth-child(2) p span {
+  color: #e4393c;
+}
+#main #main-rt > div.hot-comment ul li.hover div:nth-child(2) {
+  display: block;
+}
+/*4、主体部分结束*/
+/*5、免责声明*/
+div#foot-box {
+  width: 100%;
+  border-top: 2px solid #e4393c;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+div#foot-box div {
+  width: 1211px;
+  height: 30px;
+  line-height: 30px;
+  background: #ddd;
+  margin: 0 auto;
+  text-align: center;
+}
+/*5、免责声明结束*/
+/*6、底部版权部分*/
+/*底部版权部分*/
+#footer {
+  width: 1211px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#footer ul {
+  width: 43%;
+  margin: 0 auto;
+}
+#footer ul li {
+  float: left;
+  height: 2.2em;
+  line-height: 2.2em;
+  padding: 0 10px;
+}
+#footer ul li span {
+  color: #CFDAED;
+}
+#footer ul li a:hover {
+  text-decoration: underline;
+}
+#footer ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer p {
+  text-align: center;
+}
+/*底部版权部分结束*/
+/*底部版权部分结束*/

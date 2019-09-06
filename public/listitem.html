@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>深圳楼盘</title>
+    <link rel="stylesheet" href="css/listitem.css"/>
+</head>
+<body>
+<ul id="rt-fixed">
+    <li>
+        <a href="#"></a>
+        <a href="#">我的收藏</a>
+    </li>
+    <li>
+        <a href="#"></a>
+        <a href="#">返回顶部</a>
+    </li>
+</ul>
+<!--1、头部-->
+<header id="top">
+</header>
+<!--2、搜索框-->
+<div id="top-main">
+    <div>
+        <div class="search-box lf">
+            <input type="text" class="txtSearch" placeholder="请输入关键字(楼盘名/地名/开发商等)"/>
+            <button type="button" class="btnSearch">搜索</button>
+        </div>
+        <h3 class="lf">
+            <a href="#">深圳在售 <b>12357</b>套</a>&nbsp;
+            <a href="#">教育地产 <b>20</b>套</a>
+        </h3>
+    </div>
+</div>
+<!--3、条件筛选-->
+<div id="search">
+    <ul class="bread-crumb">
+        <li>
+            <a href="newhouse-listitem.html">深圳房产 </a>
+        </li>
+        <li> &gt;</li>
+        <li>
+            深圳楼盘
+        </li>
+    </ul>
+    <ul>
+        <li class="hover lp">
+            <a href="#"><span></span>楼盘搜索</a>
+            <ul>
+                <li class="area">
+                    <span>区域</span>
+                    <a href="#" class="hover">不限</a>
+                    <a href="#">龙岗</a>
+                    <a href="#">龙华区</a>
+                    <a href="#">宝安区</a>
+                    <a href="#">南山</a>
+                    <a href="#">福田</a>
+                    <a href="#">罗湖</a>
+                    <a href="#">坪山区</a>
+                    <a href="#">盐田</a>
+                    <a href="#">大鹏新区</a>
+                </li>
+                <li class="metro">
+                    <span>地铁</span>
+                    <a href="#" class="hover">不限</a>
+                    <a href="#">1号线</a>
+                    <a href="#">2号线</a>
+                    <a href="#">3号线</a>
+                    <a href="#">4号线</a>
+                    <a href="#">5号线</a>
+                    <a href="#">7号线</a>
+                    <a href="#">9号线</a>
+                    <a href="#">11号线</a>
+                </li>
+                <li class="price">
+                    <span>价格</span>
+                    <a href="#" class="hover">不限</a>
+                    <a href="#">20000以下</a>
+                    <a href="#">20000-30000</a>
+                    <a href="#">30000-40000</a>
+                    <a href="#">40000-50000</a>
+                    <a href="#">50000-60000</a>
+                    <a href="#">60000-80000</a>
+                    <a href="#">80000万以上</a>
+                    <span>单价(元/平)</span>
+                    <form>
+                        <input type="text"/> -
+                        <input type="text"/>
+                        <button>确定</button>
+                        <span>&yen;</span>
+                        <span>&yen;</span>
+                    </form>
+                </li>
+                <li class="type">
+                    <span>户型</span>
+                    <a href="#" class="hover">不限</a>
+                    <a href="#">一居</a>
+                    <a href="#">二居</a>
+                    <a href="#">三居</a>
+                    <a href="#">四居</a>
+                    <a href="#">五居及以上</a>
+                    <span>(可多选)</span>
+                </li>
+            </ul>
+        </li>
+        <li class="hx">
+            <a href="#"><span></span>户型搜索</a>
+            <ul>
+                <li>
+                    <span>户型</span>
+                    <a href="#" class="hover">不限</a>
+                    <a href="#">一居</a>
+                    <a href="#">二居</a>
+                    <a href="#">三居</a>
+                    <a href="#">四居</a>
+                    <a href="#">五居及以上</a>
+                    <span>(可多选)</span>
+                </li>
+                <li>
+                    <span>区域</span>
+                    <a href="" class="hover">不限</a>
+                    <a href="">龙岗</a>
+                    <a href="">龙华区</a>
+                    <a href="">宝安区</a>
+                    <a href="">南山</a>
+                    <a href="">福田</a>
+                    <a href="">罗湖</a>
+                    <a href="">坪山区</a>
+                    <a href="">盐田</a>
+                    <a href="">大鹏新区</a>
+                </li>
+                <li>
+                    <span>地铁</span>
+                    <a href="#" class="hover">不限</a>
+                    <a href="#">1号线</a>
+                    <a href="#">2号线</a>
+                    <a href="#">3号线</a>
+                    <a href="#">4号线</a>
+                    <a href="#">5号线</a>
+                    <a href="#">7号线</a>
+                    <a href="#">9号线</a>
+                    <a href="#">11号线</a>
+                </li>
+                <li>
+                    <span>价格</span>
+                    <a href="#" class="hover">不限</a>
+                    <a href="#">100万以下</a>
+                    <a href="#">100-200</a>
+                    <a href="#">200-300</a>
+                    <a href="#">300-400</a>
+                    <a href="#">400-500</a>
+                    <a href="#">500-600</a>
+                    <a href="#">600-800</a>
+                    <a href="#">800万以上</a>
+                    <span>总价(万元)</span>
+                    <div>
+                        <input type="text"/>
+                        <input type="text"/>
+                        <button>确定</button>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!--4、主体部分-->
+<section id="main">
+     <!--第一大块：左边-->
+    <div id="main-lf" class="lf">
+         <!--1、导航选择-->
+        <div class="main-nav">
+            <a href="#" class="current whole">全部楼盘(445)</a>
+            <a href="#" class="newhouse">新房直销(19)</a>
+            <ul class="lf">
+                <li>
+                    <span>&lt;<b class="pageno">1</b>/<b class="totalpage">23</b>&gt;</span>
+                </li>
+                <li>
+                    <a href="#">开盘时间 <span></span></a>
+                </li>
+                <li>
+                    <a href="#">点评 <span></span></a>
+                </li>
+                <li>
+                    <a href="#">价格 <span></span></a>
+                </li>
+                <li class="current">
+                    <a href="#">默认排序</a>
+                </li>
+            </ul>
+        </div>
+        <!--2、列表展示-->
+        <ul class="main-box">
+            <li class="hover">
+                <a href="details.html" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="details.html">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="details.html" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="details.html">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="details.html" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="details.html">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="#">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="#">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="#">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="#">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="#">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="#">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="lf">
+                    <img src="images/list/wl-01-1-s.jpg" alt=""/>
+                </a>
+                <div class="rt">
+                    <div class="lf">
+                        <h3>
+                            <a href="#">万科麓山</a>
+                            <a href="#"></a>
+                            <a href="#">(39条评论)</a>
+                        </h3>
+                        <p>
+                            <a href="#">暂无资料</a><br/>
+                            <a href="#">[龙岗]布龙路与吉华路交汇处</a><br/>
+                            <span class="current">待售</span>
+                            <span>普通住宅</span>
+                            <span>塔楼</span>
+                            <span>期房</span>
+                            <span>非毛坯</span>
+                        </p>
+                    </div>
+                    <div class="rt">
+                        <h1>59000<span> 元/m&sup2;</span></h1>
+                        <h3>400-890-0000 <small>转</small> 836855</h3>
+                        <p>
+                            <i class="alert"></i>
+                            <a href="#"><span class="glyphicon glyphicon-heart"></span> 收藏</a>
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> 对比</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="page-box">
+            <ul>
+                <li>
+                    共<b>447</b>条
+                </li>
+                <li class="pages">
+                    <a href="#" class="first-page">首页</a>
+                    <a href="#" class="prev-page">上一页</a>
+                    <a class="hover">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="next-page">下一页</a>
+                    <a href="#" class="last-page">尾页</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+     <!--第二大块：右边-->
+    <div id="main-rt" class="rt">
+        <div>
+            <h2>
+                <a href="#">您感兴趣的购房技巧</a>
+                <a href="#">更多&gt;</a>
+            </h2>
+            <ul>
+                <li>
+                    <a href="#">房子只有70年的产权?70年以后怎么办?</a>
+                </li>
+                <li>
+                    <a href="#">这些房子打死也不能买 你知道是哪些吗?</a>
+                </li>
+                <li>
+                    <a href="#">一家三口住多大合适?哪种户型最优?</a>
+                </li>
+                <li>
+                    <a href="#">买房交完首付款 下一步你应该准备什么?</a>
+                </li>
+                <li>
+                    <a href="#">终于明白买新房和买二手房到底有什么不同了</a>
+                </li>
+                <li>
+                    <a href="#">房贷申请难?可能你掉进了贷款“潜规则”</a>
+                </li>
+                <li>
+                    <a href="#">新房、二手房买房费用及区别对比 选哪个好</a>
+                </li>
+                <li>
+                    <a href="#">买房需谨慎 这些房子便宜也不能碰!</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-comment">
+            <h2>
+                楼盘热评榜
+            </h2>
+            <ul>
+                <li class="hover">
+                    <div>
+                        <p><span>1</span>龙光城</p>
+                        <p>
+                            <span>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/harfStarSdp.gif" alt=""/>
+                                <img src="images/list/grayStardp.gif" alt=""/>
+                            </span>
+                            816条点评
+                        </p>
+                    </div>
+                    <!--鼠标悬停时显示-->
+                    <div>
+                        <a href="#"><img src="images/list/hotc-01-1.jpg" alt=""/></a>
+                        <a href="#">
+                            <span>1</span>龙光城[龙岗]<br/>
+                            <span class="star">
+                               <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/harfStarSdp.gif" alt=""/>
+                                <img src="images/list/grayStardp.gif" alt=""/>
+                            </span>&nbsp;<span>816条点评</span>
+                        </a>
+                        <p><span>15000</span>元/平方米</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p><span>2</span>龙光城</p>
+                        <p>
+                            <span>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/harfStarSdp.gif" alt=""/>
+                                <img src="images/list/grayStardp.gif" alt=""/>
+                            </span>
+                            816条点评
+                        </p>
+                    </div>
+                    <!--鼠标悬停时显示-->
+                    <div>
+                        <a href="#"><img src="images/list/hotc-01-1.jpg" alt=""/></a>
+                        <a href="#">
+                            <span>2</span>龙光城[龙岗]<br/>
+                            <span class="star">
+                               <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/harfStarSdp.gif" alt=""/>
+                                <img src="images/list/grayStardp.gif" alt=""/>
+                            </span>&nbsp;<span>816条点评</span>
+                        </a>
+                        <p><span>15000</span>元/平方米</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p><span>3</span>龙光城</p>
+                        <p>
+                            <span>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/harfStarSdp.gif" alt=""/>
+                                <img src="images/list/grayStardp.gif" alt=""/>
+                            </span>
+                            816条点评
+                        </p>
+                    </div>
+                    <!--鼠标悬停时显示-->
+                    <div>
+                        <a href="#"><img src="images/list/hotc-01-1.jpg" alt=""/></a>
+                        <a href="#">
+                            <span>3</span>龙光城[龙岗]<br/>
+                            <span class="star">
+                               <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/harfStarSdp.gif" alt=""/>
+                                <img src="images/list/grayStardp.gif" alt=""/>
+                            </span>&nbsp;<span>816条点评</span>
+                        </a>
+                        <p><span>15000</span>元/平方米</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p><span>4</span>龙光城</p>
+                        <p>
+                            <span>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/harfStarSdp.gif" alt=""/>
+                                <img src="images/list/grayStardp.gif" alt=""/>
+                            </span>
+                            816条点评
+                        </p>
+                    </div>
+                    <!--鼠标悬停时显示-->
+                    <div>
+                        <a href="#"><img src="images/list/hotc-01-1.jpg" alt=""/></a>
+                        <a href="#">
+                            <span>4</span>龙光城[龙岗]<br/>
+                            <span class="star">
+                               <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/lightStarSdp.png" alt=""/>
+                                <img src="images/list/harfStarSdp.gif" alt=""/>
+                                <img src="images/list/grayStardp.gif" alt=""/>
+                            </span>&nbsp;<span>816条点评</span>
+                        </a>
+                        <p><span>15000</span>元/平方米</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</section>
+<!--5、免责申明-->
+<div id="foot-box">
+    <div><b>免责声明：</b> 本站楼盘信息旨在为用户提供更多信息的无偿服务，信息以政府部门登记备案为准，
+        请谨慎核查。如该楼盘信息有误，您可以投诉或拨打举报电话：400-850-8888。
+    </div>
+</div>
+<!--6、关于我们-->
+<footer id="footer">
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/listitem.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

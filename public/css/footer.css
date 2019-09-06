@@ -1,0 +1,31 @@
+/*底部版权部分*/
+#footer {
+  width: 1211px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#footer ul {
+  width: 43%;
+  margin: 0 auto;
+}
+#footer ul li {
+  float: left;
+  height: 2.2em;
+  line-height: 2.2em;
+  padding: 0 10px;
+}
+#footer ul li span {
+  color: #CFDAED;
+}
+#footer ul li a:hover {
+  text-decoration: underline;
+}
+#footer ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer p {
+  text-align: center;
+}
+/*底部版权部分结束*/

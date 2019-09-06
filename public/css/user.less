@@ -1,0 +1,456 @@
+@import "Global-header.less";
+@import "rt-fixed.less";
+body{
+  background:#efefef;
+}
+#top-main{
+  width:1211px;
+  height:120px;
+  margin:10px auto;
+  background:#fff;
+  div.user-img{
+    float:left;
+    width:90px;
+    height:90px;
+    border:5px solid #efefef;
+    border-radius:50%;
+    margin:15px 40px;
+    overflow:hidden;
+    img{
+      width:90px;
+      height:90px;
+      margin:-5px;
+    }
+  }
+  h2{
+    height:120px;
+    line-height:120px;
+    a{
+      color:#5FC4EF;
+    }
+    a:hover{
+      text-decoration:underline;
+    }
+  }
+  ul{
+    margin-right:50px;
+  }
+  ul li{
+    float:left;
+    a{
+      display:inline-block;
+      height:60px;
+      line-height:30px;
+      padding:0 30px;
+      margin-top:30px;
+      font-size:1.2em;
+      text-align:center;
+      b{
+        color:@base-color;
+      }
+      b:hover{
+        color: #ac2508;
+        text-decoration:underline;
+      }
+    }
+    a:hover{
+      color:#000;
+    }
+  }
+  ul li~li a{
+    border-left:1px solid @color-lighter;
+  }
+}
+#main{
+  width:1211px;
+  margin:0 auto;
+  overflow:hidden;
+}
+#main div.aside-lf{
+  width:20%;
+}
+#main div.aside-lf ul{
+  padding:2px;
+  background:#fff;
+  li{
+    width:100%;
+    line-height:40px;
+    margin-bottom:1px;
+    text-align:center;
+    a{
+      display:inline-block;
+      width:100%;
+    }
+  }
+  a.money-manage,a.my-loan{
+    position:relative;
+    span{
+      position:absolute;
+      top:14px;
+      left:45px;
+      width:13px;
+      height:13px;
+      background:url("../images/user/co_icon.gif") 0 -43px;
+    }
+    span.close{
+      background-position:0 0;
+    }
+  }
+  a.money-manage+div,a.my-loan+div{
+    height:0;
+    overflow:hidden;
+  }
+  li a:hover{
+    color:@color-gray-deeper;
+  }
+  li.heading{
+    background:@color-light
+  }
+}
+/*主体中间部分*/
+//////////////////////////////首页
+#main-box{
+  width:79%;
+  margin-left:1%;
+}
+//我的订单
+#main div.aside-body{
+  width:75%;
+}
+#main div.aside-body h4{
+  height:45px;
+  line-height:45px;
+  border-bottom:1px solid @color-lighter;
+  font-weight:normal;
+  color:@color-gray-deep;
+}
+#main div.aside-body div.my-order{
+  height:180px;
+  background:#fff;
+  padding:0 15px;
+  p{
+    color:@color-light;
+    height:40px;
+    line-height:40px;
+    margin-top:35px;
+    font-size:1.2em;
+    text-align:center;
+  }
+  p span{
+    display:inline-block;
+    width:30px;
+    height:40px;
+    background:url("../images/user/kong_dan.png") no-repeat;
+    vertical-align:middle;
+  }
+  p a{
+    color:#5AC5ED;
+  }
+  p a:hover{
+    text-decoration:underline;
+  }
+}
+//猜你喜欢
+#main div.guess{
+  background:#fff;
+  padding:0 15px;
+  margin-top:20px;
+  overflow: hidden;
+  ul{
+    padding-bottom:15px;
+    overflow: hidden;
+  }
+  li{
+    width:24%;
+    border:1px solid @color-light;
+    margin-left:8px;
+    margin-top:15px;
+  }
+  li:hover{
+    border-color:#f00;
+  }
+  li:nth-child(4n+1){
+    margin-left:0;
+  }
+  h5{margin:15px 0 10px 10px;}
+  h5 a:hover{
+    color:@base-color;
+    text-decoration:underline;
+  }
+  p{margin:5px 10px;}
+  li img{
+    width:100%;
+  }
+}
+///////////////////////个人资料
+div.personal-content{
+  width:100%;
+  height:100%;
+  background:#fff;
+  padding:20px;
+  p.tips{
+    margin-bottom:50px;
+  }
+  p.tips span{
+    color:#4FC0E8;
+  }
+  >h3{
+    position:relative;
+    width:100%;
+    height:40px;
+    line-height:40px;
+    padding:0 2%;
+    border-bottom:2px solid @color-lighter;
+  }
+  >h3 a{
+    display: inline-block;
+    width:10%;
+    height:45px;
+    //line-height:45px;
+    margin-right:20%;
+    color:@color-gray;
+  }
+  >h3 a.current{
+    color:#FF0000;
+  }
+  >h3 b.bottom-line{
+    position: absolute;
+    bottom:-2px;
+    left:0;
+    width:11%;
+    border-bottom:2px solid #FF0000;
+    transition:all .5s linear;
+  }
+  >div{
+    padding:40px 0;
+  }
+  >div form >div{
+    width:100%;
+    line-height:30px;
+    margin-bottom:30px;
+  }
+  >div form >div:after{
+    content:"";
+    display: block;
+    clear:both;
+  }
+  >div form >div label{
+    float:left;
+    width:16%;
+    height:30px;
+    line-height:30px;
+    margin-right:10px;
+    text-align:right;
+  }
+  >div form >div p{
+    float:left;
+    width:82%;
+  }
+  >div form >div input{
+    //float:left;
+    width:25%;
+    height:30px;
+    line-height:30px;
+
+  }
+  >div form >div.head-img img{
+    border:1px solid @color-lighter;
+  }
+  >div form >div.head-img input{
+    width:9.5%;
+  }
+  >div form >div.head-img span{
+    font-size:0.8em;
+    color:@color-gray-deep;
+  }
+  >div form >div.nick-name input,>div form >div.real-name input{
+    width:15%;
+  }
+  >div form >div.Sex input{
+    width:13px;
+    height:13px;
+  }
+  >div form >div.Sex input:last-child{
+    margin-left:10%;
+  }
+  >div form >div select{
+    //float:left;
+    width:20%;
+    height:30px;
+    line-height:30px;
+  }
+  >div form >div.id-no input,>div form >div.job input{
+    width:30%;
+  }
+  >div form  button{
+    width:20%;
+    height:35px;
+    line-height:35px;
+    background:#f00;
+    border:none;
+    padding:0;
+    margin-left:17%;
+    color:#fff;
+    font-size:1.5em;
+  }
+  >div form  button:hover{
+    background:@base-color;
+  }
+}
+
+
+
+
+
+
+
+/**********************************************************主体中间部分结束*/
+/*主体右侧部分*/
+div.aside-rt{
+  width:24%;
+}
+div.aside-rt h4{
+  height:25px;
+  line-height:25px;
+  color:@color-gray-deep;
+  font-weight:normal;
+}
+div.my-calendar{
+  background:#fff;
+  padding:10px;
+  >div{
+    border-bottom:1px solid @color-lighter;
+    padding:10px 50px;
+    color:@color-gray;
+    overflow: hidden;
+    b.date{
+      float:left;
+      font-size:5em;
+    }
+    span{
+      float:left;
+      line-height:10px;
+      margin-top:20px;
+      font-size:1.2em;
+      font-weight:bold;
+    }
+  }
+}
+//快捷服务
+div.fast-server,div.tool,div.qr-code{
+  background:#fff;
+  padding:10px 0;
+  margin-top:15px;
+}
+div.fast-server h4,div.tool h4,div.qr-code h4{
+  padding-left:10px;
+}
+div.fast-server ul,div.tool ul{
+  border-bottom:1px solid @color-lighter;
+  padding-bottom:10px;
+  overflow: hidden;
+}
+div.fast-server ul li,div.tool ul li,div.qr-code ul li{
+  float:left;
+  width:50%;
+  margin:10px 0;
+  text-align:center;
+}
+div.fast-server li a:last-child,div.tool li a:last-child,div.qr-code li span:last-child{
+  display:inline-block;
+  margin-top:5px;
+}
+div.fast-server li a:hover,div.tool li a:hover{
+  text-decoration:underline;
+}
+div.fast-server{
+    li span{
+      display:inline-block;
+      width:21px;
+      height:21px;
+      background:url("../images/user/sprite.png") no-repeat -42px -42px;
+    }
+    li.h-rent span{
+      background-position:-21px -21px;
+    }
+    li.h-find span{
+      background-position:-63px -42px;
+    }
+    li.h-fix span{
+      background-position:-63px -84px;
+    }
+    li.h-sold.active span{
+      background-position:0 -63px;
+    }
+    li.h-rent.active span{
+      background-position:0 -21px;
+    }
+    li.h-find.active span{
+      background-position:-21px -63px;
+    }
+    li.h-fix.active span{
+      background-position:-42px -84px;
+    }
+
+}
+li.active a{
+   color:@base-color;
+   text-decoration:underline;
+ }
+//常用工具
+div.tool{
+  margin-top:0;
+  padding-bottom:0;
+}
+div.tool ul li{width:33.3%;}
+.tool li span{
+  display:inline-block;
+  width:24px;
+  height:21px;
+  background:url("../images/user/sprite.png") no-repeat -48px -126px;
+}
+li.t-calc-rate span{
+  background-position:-42px -105px;
+}
+li.t-find-price span{
+  width:21px;
+  background-position:-63px -21px;
+}
+li.t-status span{
+  background:url("../images/user/cgfzg1.png") no-repeat;
+}
+li.t-calc-load.active span{
+  background-position:-24px -126px;
+}
+li.t-calc-rate.active span{
+  background-position:0px -126px;
+}
+li.t-find-price.active span{
+  width:21px;
+  background-position:-42px -63px;
+}
+li.t-status.active span{
+  background:url("../images/user/cgfzg2.png") no-repeat;
+}
+//二维码
+div.qr-code{
+  overflow: hidden;
+}
+div.qr-code ul li{
+  width:41%;
+  margin:10px 10px;
+}
+div.qr-code li div{
+  border:1px solid @color-light;
+  padding:5px;
+  img{
+    width:100%;
+  }
+}
+div.qr-code span{
+  font-size:.8em;
+}
+/*主体右侧部分结束*/
+
+/*尾部*/
+@import "footer.less";

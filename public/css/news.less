@@ -1,0 +1,103 @@
+@import "Global-header.less";
+/*右侧绝对定位*/
+@import "rt-fixed.less";
+
+/*2、top-main部分*/
+#top-main{
+  background:#F3F3F3;
+  padding-top:20px;
+  margin-bottom:20px;
+  overflow: hidden;
+  div{
+    width:1211px;
+    margin:0 auto;
+    /*搜索框部分*/
+    div.search-box{
+      /*绝对定位，宽度，背景颜色，内边距，边框倒角*/
+
+      width:40%;
+      background:#D10101;
+      padding:2px 3px;
+      border-radius:3px;
+      margin-bottom:10px;
+      input.txtSearch{
+        /*宽度，去轮廓线，上下左内边距*/
+        width:85%;
+        height:2.8em;
+        line-height:2.8em;
+        border:none;
+        outline:none;
+        padding:5px 0 5px 5px;
+      }
+      button.btnSearch{
+        /*背景色，去边框，调整内边距，字体颜色，大小*/
+        background:#D10101;
+        border:none;
+        margin-top:1px;
+        color:#fff;
+        font-size:1.4em;
+        cursor:pointer;
+      }
+      button.btnSearch:hover{
+        background:#c00;
+      }
+    }
+  }
+}
+/*2、top-main部分结束*/
+
+
+
+
+
+
+
+
+
+
+/*5、友情链接*/
+#foot-box{
+  /*宽度，居中，下边框,下内外边距*/
+  width:1211px;
+  margin:0 auto;
+  border-bottom:1px solid #ddd;
+  padding-bottom:20px;
+  margin-bottom:20px;
+  h2{
+    width:100%;
+    border-bottom:4px solid #000;
+    margin-bottom:20px;
+    padding:0 6px 3px 0;
+    color:#333;
+    a{
+      float:right;
+      font-size:16px;
+      color:#333;
+    }
+    a:hover{
+      color:#e4393c;
+    }
+  }
+  ul{
+    padding:0 20px;
+    overflow: hidden;
+    li{
+      /*宽度、浮动*/
+      width:16.6%;
+      float:left;
+      height:2.2em;
+      line-height:2.2em;
+      text-align:left;
+      a:hover{
+        text-decoration:underline;
+      }
+    }
+  }
+
+}
+/*友情链接结束*/
+/*底部版权部分*/
+@import "footer.less";
+
+
+

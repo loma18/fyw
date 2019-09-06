@@ -1,0 +1,303 @@
+/*全局设置*/
+body{
+  margin:0;
+  padding:0;
+  font:14px simsun,Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box;}
+img{vertical-align:bottom;}
+.lf{
+  float:left;
+}
+.rt{
+  float:right;
+}
+/*定义基础样式变量*/
+@base-color:#e4393c;
+@base-bg-color:#fff;
+@color-light:#ccc;
+@color-lighter:#ddd;
+@color-lightest:#eee;
+@color-gray:#999999;
+@color-gray-deep:#666666;
+@color-gray-deeper:#333333;
+/*css样式初始化*/
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,li{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+a{
+  color:@color-gray-deeper;
+  text-decoration:none;
+}
+a:hover{
+  color:@base-color;
+}
+
+/*1、头部*/
+#top{
+  height:50px;
+  line-height:50px;
+  background-image:linear-gradient(to bottom,#be0000 0%,#d80000 100%);
+  #top-box{
+    width:1211px;
+    margin:0 auto;
+    /*logo*/
+    >a{
+      float:left;
+      img{
+        height:34px;
+        vertical-align:middle;
+      }
+    }
+    /*头部列表*/
+    >ul{
+      >li{
+        float:left;
+        padding:0 10px;
+        text-align:center;
+        >a{
+          color:#fcf0f0;
+          font-weight:bold;
+        }
+      }
+      >li:hover{
+        background:#B30000;
+      }
+      li.address{
+        padding-right:18px;
+      }
+      li.address:hover .address-box{
+        display: block;
+        z-index:30;
+      }
+      /*下拉框向上箭头*/
+      li.address:hover>span.caret{
+        border:9px solid transparent;
+        border-bottom-color:white;
+        bottom:0;
+        left:18px;
+      }
+      /*买房*/
+      li.buy{
+        /*配合下拉框做相对定位、右内边距*/
+        position:relative;
+        padding-right:18px;
+        ul.buy-box{
+          position:absolute;
+          left:0;
+          width:100%;
+          border:1px solid #b2b2b2;
+          border-top:none;
+          background-color: white;
+          display: none;
+          li{
+            height:30px;
+            line-height:30px;
+          }
+        }
+      }
+      li.buy:hover>span.caret{
+        bottom:0;
+        left:18px;
+        border:9px solid transparent;
+        border-bottom-color:white;
+      }
+      li.buy:hover .buy-box{
+        display:block;
+        z-index:10;
+      }
+      /*右侧登陆*/
+      li.lk,li.order{
+        padding:0 3px;
+      }
+      li.lk span,li.order span{
+        /*宽度、高度、背景、绝对定位*/
+        position:relative;
+        top:4px;
+        left:0px;
+        display: inline-block;
+        width:16px;
+        height:16px;
+        background:url("../images/icon-dingd.png") no-repeat;
+      }
+      li.order span{
+        height:18px;
+        background-position:-1px -16px;
+      }
+      li.login{
+        position:relative;
+      }
+      li.login >p{
+        display: none;
+        position:absolute;
+        top:50px;
+        left:0;
+        z-index: 10000;
+        width:80px;
+        height:30px;
+        line-height: 30px;
+        background:#fff;
+      }
+      li.login >p span{
+        position:absolute;
+        top:-18px;
+        left:15px;
+        z-index: 1;
+        border:9px solid transparent;
+        border-bottom-color:white;
+      }
+      li.login >p a{
+        display: inline-block;
+        width:100%;
+        height:30px;
+      }
+      li.login >p:hover span{
+        border-bottom-color:@color-lighter;
+      }
+      li.login >p:hover a{
+        background:@color-lighter;
+      }
+      li #login{
+        color:#000;
+        font-weight:bold;
+      }
+      li #login a{
+        color:#fcf0f0;
+        font-weight: bold;
+      }
+      li.login div.login-box{
+        /*默认模态框隐藏*/
+        display:none;
+        position:fixed;
+        top:0;right:0;
+        bottom:0;left:0;
+        z-index:10001;
+        background:rgba(0,0,0,.7);
+        >div{
+          position:fixed;
+          top:50%;
+          left:50%;
+          width:420px;
+          height:420px;
+          margin-top:-210px;
+          margin-left:-220px;
+          background:#fff;
+          h2{
+            width:100%;
+            height:100px;
+            line-height:100px;
+            text-align:center;
+          }
+          form div{
+            position:relative;
+            width:80%;
+            margin:0 auto;
+            //overflow:hidden;
+            input{
+              width:100%;
+              height:40px;
+              line-height:40px;
+              padding:5px 3px 5px 30px;
+            }
+            span{
+              position:absolute;
+              top:18px;
+              left:10px;
+              color:@color-gray;
+            }
+            b.tips_new{
+              display: none;
+              position:absolute;
+              top:-25px;
+              left:0;
+              width:200px;
+              height:28px;
+              line-height: 28px;
+              border:1px solid @base-color;
+              padding:0 5px;
+              font-size:1em;
+              text-align:left;
+              color:@base-color;
+            }
+          }
+          >div:last-child{
+            width:80%;
+            margin:0 auto;
+            border-top:1px solid #eee;
+            margin-top:20px;
+            a{
+              color:@base-color;
+            }
+          }
+          >span{
+            position:absolute;
+            top:0;
+            right:0;
+            width:25px;
+            height:25px;
+            line-height:25px;
+            background:@color-gray;
+            color:#fff;
+            cursor:pointer;
+          }
+          >span:hover{
+            background:@color-gray-deep;
+          }
+        }
+      }
+      li.register{
+        /*去内边距*/
+        padding:0;
+        a{
+          /*左右内边距、边框*/
+          padding:0 10px;
+          border-left: 1px solid white;
+        }
+      }
+      /*第一个子元素ul结束*/
+    }
+    /*头部#top-box结束*/
+  }
+  #top-box:after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+  /*头部#top结束*/
+}
+/*可复用样式*/
+span.caret{
+  width:0px;
+  height:0px;
+  border:5px solid transparent;
+  border-top-color:#f0f0f0;
+  position: absolute;
+  bottom:35%;
+  right:3px;
+  z-index:10;
+}
+.address{
+  /*配合下拉框做相对定位*/
+  position:relative;
+  ul.address-box{
+    /*宽度、边框、背景颜色、左右内边距、绝对定位、默认隐藏*/
+    position:absolute;
+    left:0;
+    display:none;
+    width:248px;
+    border:1px solid #b2b2b2;
+    border-top:none;
+    background:white;
+    padding:0 3px;
+    li{
+      float:left;
+      width:25%;
+      height:30px;
+      line-height:30px;
+      text-align:left;
+    }
+  }
+}
+/*可复用样式结束*/

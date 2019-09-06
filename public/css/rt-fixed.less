@@ -1,0 +1,52 @@
+/*定义基础样式变量*/
+@base-color:#e4393c;
+@base-bg-color:#fff;
+@color-light:#ccc;
+@color-lighter:#ddd;
+@color-lightest:#eee;
+@color-gray:#999999;
+@color-gray-deep:#666666;
+@color-gray-deeper:#333333;
+
+#rt-fixed{
+  position:fixed;
+  top:50%;
+  right:0;
+  z-index:1000;
+  display:none;
+  li{
+    width:35px;
+    height:35px;
+    background:#7A6E6E url('../images/icon_rbar20160517.png') no-repeat -1px 0;
+    margin-bottom:1px;
+    /*配合弹出框做相对定位*/
+    position:relative;
+  }
+  li:last-child{
+    background:#7A6E6E url('../images/to-top.png') no-repeat 8px 8px;
+    background-size:20px 20px;
+  }
+  li a:first-child{
+    display: block;
+    width:35px;
+    height:35px;
+  }
+  li a:last-child{
+    display:none;
+  }
+  li:hover{
+    background-color:@base-color;
+  }
+  li:hover a:last-child{
+    display:block;
+    width:68px;
+    height:35px;
+    line-height:35px;
+    background:@base-color;
+    padding-left:3px;
+    color:#fff;
+    position:absolute;
+    right:35px;
+    top:0;
+  }
+}

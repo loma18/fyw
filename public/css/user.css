@@ -1,0 +1,838 @@
+/*全局设置*/
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px simsun, Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  vertical-align: bottom;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+/*定义基础样式变量*/
+/*css样式初始化*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  color: #333333;
+  text-decoration: none;
+}
+a:hover {
+  color: #e4393c;
+}
+/*1、头部*/
+#top {
+  height: 50px;
+  line-height: 50px;
+  background-image: linear-gradient(to bottom, #be0000 0%, #d80000 100%);
+  /*头部#top结束*/
+}
+#top #top-box {
+  width: 1211px;
+  margin: 0 auto;
+  /*logo*/
+  /*头部列表*/
+  /*头部#top-box结束*/
+}
+#top #top-box > a {
+  float: left;
+}
+#top #top-box > a img {
+  height: 34px;
+  vertical-align: middle;
+}
+#top #top-box > ul {
+  /*下拉框向上箭头*/
+  /*买房*/
+  /*右侧登陆*/
+  /*第一个子元素ul结束*/
+}
+#top #top-box > ul > li {
+  float: left;
+  padding: 0 10px;
+  text-align: center;
+}
+#top #top-box > ul > li > a {
+  color: #fcf0f0;
+  font-weight: bold;
+}
+#top #top-box > ul > li:hover {
+  background: #B30000;
+}
+#top #top-box > ul li.address {
+  padding-right: 18px;
+}
+#top #top-box > ul li.address:hover .address-box {
+  display: block;
+  z-index: 30;
+}
+#top #top-box > ul li.address:hover > span.caret {
+  border: 9px solid transparent;
+  border-bottom-color: white;
+  bottom: 0;
+  left: 18px;
+}
+#top #top-box > ul li.buy {
+  /*配合下拉框做相对定位、右内边距*/
+  position: relative;
+  padding-right: 18px;
+}
+#top #top-box > ul li.buy ul.buy-box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border: 1px solid #b2b2b2;
+  border-top: none;
+  background-color: white;
+  display: none;
+}
+#top #top-box > ul li.buy ul.buy-box li {
+  height: 30px;
+  line-height: 30px;
+}
+#top #top-box > ul li.buy:hover > span.caret {
+  bottom: 0;
+  left: 18px;
+  border: 9px solid transparent;
+  border-bottom-color: white;
+}
+#top #top-box > ul li.buy:hover .buy-box {
+  display: block;
+  z-index: 10;
+}
+#top #top-box > ul li.lk,
+#top #top-box > ul li.order {
+  padding: 0 3px;
+}
+#top #top-box > ul li.lk span,
+#top #top-box > ul li.order span {
+  /*宽度、高度、背景、绝对定位*/
+  position: relative;
+  top: 4px;
+  left: 0px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icon-dingd.png") no-repeat;
+}
+#top #top-box > ul li.order span {
+  height: 18px;
+  background-position: -1px -16px;
+}
+#top #top-box > ul li.login {
+  position: relative;
+}
+#top #top-box > ul li.login > p {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 10000;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+}
+#top #top-box > ul li.login > p span {
+  position: absolute;
+  top: -18px;
+  left: 15px;
+  z-index: 1;
+  border: 9px solid transparent;
+  border-bottom-color: white;
+}
+#top #top-box > ul li.login > p a {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+}
+#top #top-box > ul li.login > p:hover span {
+  border-bottom-color: #ddd;
+}
+#top #top-box > ul li.login > p:hover a {
+  background: #ddd;
+}
+#top #top-box > ul li #login {
+  color: #000;
+  font-weight: bold;
+}
+#top #top-box > ul li #login a {
+  color: #fcf0f0;
+  font-weight: bold;
+}
+#top #top-box > ul li.login div.login-box {
+  /*默认模态框隐藏*/
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.7);
+}
+#top #top-box > ul li.login div.login-box > div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 420px;
+  height: 420px;
+  margin-top: -210px;
+  margin-left: -220px;
+  background: #fff;
+}
+#top #top-box > ul li.login div.login-box > div h2 {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+#top #top-box > ul li.login div.login-box > div form div {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+#top #top-box > ul li.login div.login-box > div form div input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px 3px 5px 30px;
+}
+#top #top-box > ul li.login div.login-box > div form div span {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  color: #999999;
+}
+#top #top-box > ul li.login div.login-box > div form div b.tips_new {
+  display: none;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 200px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #e4393c;
+  padding: 0 5px;
+  font-size: 1em;
+  text-align: left;
+  color: #e4393c;
+}
+#top #top-box > ul li.login div.login-box > div > div:last-child {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}
+#top #top-box > ul li.login div.login-box > div > div:last-child a {
+  color: #e4393c;
+}
+#top #top-box > ul li.login div.login-box > div > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: #999999;
+  color: #fff;
+  cursor: pointer;
+}
+#top #top-box > ul li.login div.login-box > div > span:hover {
+  background: #666666;
+}
+#top #top-box > ul li.register {
+  /*去内边距*/
+  padding: 0;
+}
+#top #top-box > ul li.register a {
+  /*左右内边距、边框*/
+  padding: 0 10px;
+  border-left: 1px solid white;
+}
+#top #top-box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*可复用样式*/
+span.caret {
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-top-color: #f0f0f0;
+  position: absolute;
+  bottom: 35%;
+  right: 3px;
+  z-index: 10;
+}
+.address {
+  /*配合下拉框做相对定位*/
+  position: relative;
+}
+.address ul.address-box {
+  /*宽度、边框、背景颜色、左右内边距、绝对定位、默认隐藏*/
+  position: absolute;
+  left: 0;
+  display: none;
+  width: 248px;
+  border: 1px solid #b2b2b2;
+  border-top: none;
+  background: white;
+  padding: 0 3px;
+}
+.address ul.address-box li {
+  float: left;
+  width: 25%;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+/*可复用样式结束*/
+/*定义基础样式变量*/
+#rt-fixed {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+#rt-fixed li {
+  width: 35px;
+  height: 35px;
+  background: #7A6E6E url('../images/icon_rbar20160517.png') no-repeat -1px 0;
+  margin-bottom: 1px;
+  /*配合弹出框做相对定位*/
+  position: relative;
+}
+#rt-fixed li:last-child {
+  background: #7A6E6E url('../images/to-top.png') no-repeat 8px 8px;
+  background-size: 20px 20px;
+}
+#rt-fixed li a:first-child {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+#rt-fixed li a:last-child {
+  display: none;
+}
+#rt-fixed li:hover {
+  background-color: #e4393c;
+}
+#rt-fixed li:hover a:last-child {
+  display: block;
+  width: 68px;
+  height: 35px;
+  line-height: 35px;
+  background: #e4393c;
+  padding-left: 3px;
+  color: #fff;
+  position: absolute;
+  right: 35px;
+  top: 0;
+}
+body {
+  background: #efefef;
+}
+#top-main {
+  width: 1211px;
+  height: 120px;
+  margin: 10px auto;
+  background: #fff;
+}
+#top-main div.user-img {
+  float: left;
+  width: 90px;
+  height: 90px;
+  border: 5px solid #efefef;
+  border-radius: 50%;
+  margin: 15px 40px;
+  overflow: hidden;
+}
+#top-main div.user-img img {
+  width: 90px;
+  height: 90px;
+  margin: -5px;
+}
+#top-main h2 {
+  height: 120px;
+  line-height: 120px;
+}
+#top-main h2 a {
+  color: #5FC4EF;
+}
+#top-main h2 a:hover {
+  text-decoration: underline;
+}
+#top-main ul {
+  margin-right: 50px;
+}
+#top-main ul li {
+  float: left;
+}
+#top-main ul li a {
+  display: inline-block;
+  height: 60px;
+  line-height: 30px;
+  padding: 0 30px;
+  margin-top: 30px;
+  font-size: 1.2em;
+  text-align: center;
+}
+#top-main ul li a b {
+  color: #e4393c;
+}
+#top-main ul li a b:hover {
+  color: #ac2508;
+  text-decoration: underline;
+}
+#top-main ul li a:hover {
+  color: #000;
+}
+#top-main ul li ~ li a {
+  border-left: 1px solid #ddd;
+}
+#main {
+  width: 1211px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#main div.aside-lf {
+  width: 20%;
+}
+#main div.aside-lf ul {
+  padding: 2px;
+  background: #fff;
+}
+#main div.aside-lf ul li {
+  width: 100%;
+  line-height: 40px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+#main div.aside-lf ul li a {
+  display: inline-block;
+  width: 100%;
+}
+#main div.aside-lf ul a.money-manage,
+#main div.aside-lf ul a.my-loan {
+  position: relative;
+}
+#main div.aside-lf ul a.money-manage span,
+#main div.aside-lf ul a.my-loan span {
+  position: absolute;
+  top: 14px;
+  left: 45px;
+  width: 13px;
+  height: 13px;
+  background: url("../images/user/co_icon.gif") 0 -43px;
+}
+#main div.aside-lf ul a.money-manage span.close,
+#main div.aside-lf ul a.my-loan span.close {
+  background-position: 0 0;
+}
+#main div.aside-lf ul a.money-manage + div,
+#main div.aside-lf ul a.my-loan + div {
+  height: 0;
+  overflow: hidden;
+}
+#main div.aside-lf ul li a:hover {
+  color: #333333;
+}
+#main div.aside-lf ul li.heading {
+  background: #ccc;
+}
+/*主体中间部分*/
+#main-box {
+  width: 79%;
+  margin-left: 1%;
+}
+#main div.aside-body {
+  width: 75%;
+}
+#main div.aside-body h4 {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+  color: #666666;
+}
+#main div.aside-body div.my-order {
+  height: 180px;
+  background: #fff;
+  padding: 0 15px;
+}
+#main div.aside-body div.my-order p {
+  color: #ccc;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 35px;
+  font-size: 1.2em;
+  text-align: center;
+}
+#main div.aside-body div.my-order p span {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  background: url("../images/user/kong_dan.png") no-repeat;
+  vertical-align: middle;
+}
+#main div.aside-body div.my-order p a {
+  color: #5AC5ED;
+}
+#main div.aside-body div.my-order p a:hover {
+  text-decoration: underline;
+}
+#main div.guess {
+  background: #fff;
+  padding: 0 15px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+#main div.guess ul {
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+#main div.guess li {
+  width: 24%;
+  border: 1px solid #ccc;
+  margin-left: 8px;
+  margin-top: 15px;
+}
+#main div.guess li:hover {
+  border-color: #f00;
+}
+#main div.guess li:nth-child(4n+1) {
+  margin-left: 0;
+}
+#main div.guess h5 {
+  margin: 15px 0 10px 10px;
+}
+#main div.guess h5 a:hover {
+  color: #e4393c;
+  text-decoration: underline;
+}
+#main div.guess p {
+  margin: 5px 10px;
+}
+#main div.guess li img {
+  width: 100%;
+}
+div.personal-content {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+}
+div.personal-content p.tips {
+  margin-bottom: 50px;
+}
+div.personal-content p.tips span {
+  color: #4FC0E8;
+}
+div.personal-content > h3 {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 2%;
+  border-bottom: 2px solid #ddd;
+}
+div.personal-content > h3 a {
+  display: inline-block;
+  width: 10%;
+  height: 45px;
+  margin-right: 20%;
+  color: #999999;
+}
+div.personal-content > h3 a.current {
+  color: #FF0000;
+}
+div.personal-content > h3 b.bottom-line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 11%;
+  border-bottom: 2px solid #FF0000;
+  transition: all .5s linear;
+}
+div.personal-content > div {
+  padding: 40px 0;
+}
+div.personal-content > div form > div {
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+div.personal-content > div form > div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.personal-content > div form > div label {
+  float: left;
+  width: 16%;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+  text-align: right;
+}
+div.personal-content > div form > div p {
+  float: left;
+  width: 82%;
+}
+div.personal-content > div form > div input {
+  width: 25%;
+  height: 30px;
+  line-height: 30px;
+}
+div.personal-content > div form > div.head-img img {
+  border: 1px solid #ddd;
+}
+div.personal-content > div form > div.head-img input {
+  width: 9.5%;
+}
+div.personal-content > div form > div.head-img span {
+  font-size: 0.8em;
+  color: #666666;
+}
+div.personal-content > div form > div.nick-name input,
+div.personal-content > div form > div.real-name input {
+  width: 15%;
+}
+div.personal-content > div form > div.Sex input {
+  width: 13px;
+  height: 13px;
+}
+div.personal-content > div form > div.Sex input:last-child {
+  margin-left: 10%;
+}
+div.personal-content > div form > div select {
+  width: 20%;
+  height: 30px;
+  line-height: 30px;
+}
+div.personal-content > div form > div.id-no input,
+div.personal-content > div form > div.job input {
+  width: 30%;
+}
+div.personal-content > div form button {
+  width: 20%;
+  height: 35px;
+  line-height: 35px;
+  background: #f00;
+  border: none;
+  padding: 0;
+  margin-left: 17%;
+  color: #fff;
+  font-size: 1.5em;
+}
+div.personal-content > div form button:hover {
+  background: #e4393c;
+}
+/**********************************************************主体中间部分结束*/
+/*主体右侧部分*/
+div.aside-rt {
+  width: 24%;
+}
+div.aside-rt h4 {
+  height: 25px;
+  line-height: 25px;
+  color: #666666;
+  font-weight: normal;
+}
+div.my-calendar {
+  background: #fff;
+  padding: 10px;
+}
+div.my-calendar > div {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 50px;
+  color: #999999;
+  overflow: hidden;
+}
+div.my-calendar > div b.date {
+  float: left;
+  font-size: 5em;
+}
+div.my-calendar > div span {
+  float: left;
+  line-height: 10px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+div.fast-server,
+div.tool,
+div.qr-code {
+  background: #fff;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+div.fast-server h4,
+div.tool h4,
+div.qr-code h4 {
+  padding-left: 10px;
+}
+div.fast-server ul,
+div.tool ul {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+div.fast-server ul li,
+div.tool ul li,
+div.qr-code ul li {
+  float: left;
+  width: 50%;
+  margin: 10px 0;
+  text-align: center;
+}
+div.fast-server li a:last-child,
+div.tool li a:last-child,
+div.qr-code li span:last-child {
+  display: inline-block;
+  margin-top: 5px;
+}
+div.fast-server li a:hover,
+div.tool li a:hover {
+  text-decoration: underline;
+}
+div.fast-server li span {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background: url("../images/user/sprite.png") no-repeat -42px -42px;
+}
+div.fast-server li.h-rent span {
+  background-position: -21px -21px;
+}
+div.fast-server li.h-find span {
+  background-position: -63px -42px;
+}
+div.fast-server li.h-fix span {
+  background-position: -63px -84px;
+}
+div.fast-server li.h-sold.active span {
+  background-position: 0 -63px;
+}
+div.fast-server li.h-rent.active span {
+  background-position: 0 -21px;
+}
+div.fast-server li.h-find.active span {
+  background-position: -21px -63px;
+}
+div.fast-server li.h-fix.active span {
+  background-position: -42px -84px;
+}
+li.active a {
+  color: #e4393c;
+  text-decoration: underline;
+}
+div.tool {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+div.tool ul li {
+  width: 33.3%;
+}
+.tool li span {
+  display: inline-block;
+  width: 24px;
+  height: 21px;
+  background: url("../images/user/sprite.png") no-repeat -48px -126px;
+}
+li.t-calc-rate span {
+  background-position: -42px -105px;
+}
+li.t-find-price span {
+  width: 21px;
+  background-position: -63px -21px;
+}
+li.t-status span {
+  background: url("../images/user/cgfzg1.png") no-repeat;
+}
+li.t-calc-load.active span {
+  background-position: -24px -126px;
+}
+li.t-calc-rate.active span {
+  background-position: 0px -126px;
+}
+li.t-find-price.active span {
+  width: 21px;
+  background-position: -42px -63px;
+}
+li.t-status.active span {
+  background: url("../images/user/cgfzg2.png") no-repeat;
+}
+div.qr-code {
+  overflow: hidden;
+}
+div.qr-code ul li {
+  width: 41%;
+  margin: 10px 10px;
+}
+div.qr-code li div {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+div.qr-code li div img {
+  width: 100%;
+}
+div.qr-code span {
+  font-size: .8em;
+}
+/*主体右侧部分结束*/
+/*尾部*/
+/*底部版权部分*/
+#footer {
+  width: 1211px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#footer ul {
+  width: 43%;
+  margin: 0 auto;
+}
+#footer ul li {
+  float: left;
+  height: 2.2em;
+  line-height: 2.2em;
+  padding: 0 10px;
+}
+#footer ul li span {
+  color: #CFDAED;
+}
+#footer ul li a:hover {
+  text-decoration: underline;
+}
+#footer ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer p {
+  text-align: center;
+}
+/*底部版权部分结束*/

@@ -1,0 +1,365 @@
+/*头部*/
+@import "glyphicons.less";
+@import "Global-header.less";
+@import "rt-fixed.less";
+/*2、面包屑导航*/
+#brumb-nav{
+  width:1211px;
+  height:50px;
+  line-height:50px;
+  background:#fff;
+  margin:0 auto;
+  list-style:none;
+  li{
+    float:left;
+    margin-right:5px;
+  }
+  li:last-child{
+    color:@color-gray;
+  }
+}
+/*2、面包屑导航结束*/
+/*3、楼盘介绍*/
+#detail{
+  width:100%;
+  height:550px;
+  background:url("../images/details/bg.jpg") no-repeat;
+  background-size:100% 550px;
+  margin-bottom:20px;
+  .detail-box{
+    width:1211px;
+    padding:20px 0;
+    margin:0 auto;
+    overflow: hidden;
+  .show{
+    float:left;
+    width:600px;
+    height:510px;
+    >div{
+    border:1px solid @color-gray-deep;
+    overflow: hidden;
+    }
+  >h1{
+    position:relative;
+    width:600px;
+    height:100px;
+    margin-top:10px;
+    overflow: hidden;
+  }
+  >h1 a{
+    position: absolute;
+    top:0;
+    z-index:20;
+    width:30px;
+    height:98px;
+    background:url("../images/details/btns_photoalbum.gif") no-repeat;
+    cursor:pointer;
+  }
+    >h1 a.use:hover{
+      opacity:0.5;
+    }
+  >h1 a:first-child{
+    left:0;
+    margin-right:4px;
+    background-position: -90px -223px;
+  }
+  >h1 a:first-child.no-use{
+    background-position: -10px -223px;
+    cursor:default;
+  }
+  >h1 a:nth-child(2){
+    right:0;
+    background-position: -130px -223px;
+  }
+  >h1 a:nth-child(2).no-use{
+    background-position: -50px -223px;
+    cursor:default;
+  }
+    >h1 div{
+      position:absolute;
+      left:34px;
+      top:0;
+      height:98px;
+      width:536px;
+      overflow: hidden;
+    }
+  >h1 ul{
+    position:absolute;
+    left:0;
+    top:0;
+    height:98px;
+    li{
+      float:left;
+      width:130px;
+      height:98px;
+      border:1px solid @color-gray-deep;
+      padding:1px;
+      margin-right:4px;
+      overflow: hidden;
+    }
+    li:hover,li.hover{
+      border:2px solid @base-color;
+      padding:0px;
+    }
+    img{
+      width:126px;
+      height:94px;
+    }
+  }
+
+ }
+  .detail-rt{
+      width:580px;
+      margin-left:25px;
+      h1{
+        height:50px;
+        line-height:50px;
+      }
+      h4{
+         height:40px;
+         line-height:40px;
+        b{
+          font-size:2em;
+          color:@base-color;
+        }
+      }
+      h2{
+         height:45px;
+         line-height:45px;
+         border-bottom:1px solid @color-light;
+      }
+    >span{
+      display:inline-block;
+      border:1px solid @color-gray;
+      padding:2px;
+      margin:15px 0;
+    }
+    >span:nth-child(4){
+      border:1px solid @base-color;
+      margin-right:15px;
+    }
+    p{
+      height:40px;
+      line-height:40px;
+    }
+    div.consult{
+      width:100%;
+      border-top:1px solid @color-light;
+      margin-top:10px;
+      h3{
+        height:40px;
+        line-height:40px;
+        margin-bottom:15px;
+        a{
+          float:right;
+          font-size:0.8em;
+          color:#fff;
+        }
+        a:hover{
+          color:@base-color;
+        }
+      }
+      ul{
+        padding-left:30px;
+        li{
+          width:180px;
+          float:left;
+          img{
+            float:left;
+            width:80px;
+            height:80px;
+            margin-right:10px;
+          }
+          h4{
+            float:left;
+            height:20px;
+            line-height:20px;
+            margin-bottom:10px;
+          }
+          p{
+            float:left;
+            width:85px;
+            height:40px;
+            line-height:20px;
+          }
+        }
+      }
+    }
+  }
+ }
+}
+/*3、楼盘介绍结束*/
+/*4、主体部分*/
+#main{
+  width:1211px;
+  margin:0 auto;
+  /*楼盘动态*/
+  div.state{
+    width:100%;
+    border:1px solid @color-light;
+    margin-bottom:20px;
+    >div{
+      padding:20px;
+    }
+    >div h3{
+      height:40px;
+      line-height:40px;
+    }
+    >div h3 span{
+      border:1px solid @base-color;
+      padding:1px 5px;
+      font-size:0.8em;
+      color:@base-color;
+    }
+    >div h3 b{
+      font-weight:normal;
+      color:@color-gray;
+    }
+    >div h3 a{
+      font-weight:normal;
+      font-size:0.8em;
+      color:@color-gray;
+    }
+    >div h3 a:hover{color:@color-gray-deeper;}
+    >div>a{
+      color:@color-gray;
+    }
+    >div>a b{
+      color:@color-gray-deeper;
+    }
+  }
+  h1{
+    height:60px;
+    line-height:60px;
+    background:@color-lighter;
+    border-bottom:1px solid @color-light;
+    padding:0 20px;
+  }
+  /*楼盘点评*/
+  div.remark{
+    border:1px solid @color-light;
+    margin-bottom:20px;
+    ul li{
+      border-bottom:1px solid @color-light;
+      padding:20px;
+    }
+    ul li:last-child{
+      border:0;
+    }
+    ul div{
+      float:left;
+      width:50px;
+      height:50px;
+      border:1px solid @color-lighter;
+      border-radius:50%;
+      margin-right:20px;
+      overflow:hidden;
+      img{
+        width:50px;
+        height:50px;
+      }
+    }
+    ul li p{
+      height:50px;
+      line-height:50px;
+      color:@color-gray;
+    }
+    ul p a{
+      float:right;
+      color:@color-gray-deep;
+      b{
+        color:@color-lighter;
+      }
+      b:hover{
+        color:@base-color;
+      }
+    }
+  }
+  h1 span{
+    font-weight:normal;
+    font-size:0.7em;
+    color:@color-gray;
+  }
+  h1 a{
+    font-weight:normal;
+    color:@color-gray;
+    font-size:0.7em;
+  }
+  h1 a:hover{
+    color:@base-color;
+  }
+  div.album,div.guesslk{
+    border:1px solid @color-light;
+    margin-bottom:20px;
+    overflow: hidden;
+  }
+
+  div.album h1>ul.rt li{
+    float:left;
+    a{
+      border-right:1px solid @color-light;
+      padding:0 10px;
+    }
+  }
+  div.album h1>a{
+    padding-left:10px;
+  }
+  div.album>ul,div.guesslk>ul{
+    width:100%;
+    padding:20px 0 10px 30px;
+    overflow: hidden;
+    li{
+      float:left;
+      width:214px;
+      margin-right:20px;
+    }
+    li div{
+      width:214px;
+      height:150px;
+      border:1px solid @color-lighter;
+      padding-top:10px;
+      overflow: hidden;
+      img{
+        width:214px;
+        height:130px;
+        transition:transform .5s linear;
+      }
+      img:hover{
+        transform:scale(1.1);
+      }
+    }
+    li p{
+      height:35px;
+      line-height:35px;
+      text-align:center;
+      overflow: hidden;
+    }
+  }
+  div.guesslk li p{
+      height:50px;
+      line-height:25px;
+      padding-left:5px;
+      margin-top:5px;
+      text-align:left;
+      b{color:@base-color;}
+   }
+}
+/*4、主体部分结束*/
+/*5、免责声明*/
+div#foot-box{
+  width:100%;
+  border-top:2px solid @base-color;
+  margin:20px 0;
+  padding-top:20px;
+  div{
+    width:1211px;
+    height:30px;
+    line-height:30px;
+    background:#ddd;
+    margin:0 auto;
+    text-align:center;
+  }
+}
+/*5、免责声明结束*/
+/*6、关于我们*/
+@import "footer.less";

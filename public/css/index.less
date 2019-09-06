@@ -1,0 +1,874 @@
+/*头部*/
+@import "glyphicons.less";
+@import "Global-header.less";
+/*右侧绝对定位*/
+@import "rt-fixed.less";
+a.move-ad{
+  position:absolute;
+  width:250px;
+  height:150px;
+  background:center/cover url("../images/move-ad.jpg") no-repeat;
+  z-index:999;
+}
+/*2、搜索框*/
+#top-main{
+    /*高度、内边距、下边框、下外边距、背景图*/
+    position:relative;
+    width:100%;
+    height:430px;
+    border-bottom:1px solid @color-lighter;
+    padding:2px;
+    margin-bottom:20px;
+    overflow: hidden;
+    >a{
+      position:absolute;
+      top:1px;
+      left:50%;
+      width:100%;
+      height:99%;
+      transform:translatex(-50%);
+      img{
+          width:100%;
+          height:100%;
+         }
+    }
+
+    div.search{
+      /*高度，宽度，背景，左外边距、内边距、相对定位*/
+      position:absolute;
+      left:49%;
+      top:68%;
+      width:47%;
+      height:180px;
+      background:rgba(195, 104, 24, 0.49);
+      margin:0 auto;
+      padding:20px 15px;
+      border-radius:15px;
+      transform:translate(-50%,-90px);
+
+      /*切换区*/
+      h1{
+         /*变行内块*/
+         display:inline-block;
+         small{
+            font-size:14px;
+            font-weight:normal;
+          }
+          a:hover{
+              color:#333;
+          }
+        }
+       div.address{
+           /*变成行内块，相对定位*/
+           position:relative;
+           display:inline-block;
+           span{
+               /*默认隐藏*/
+               display:none;
+           }
+           ul.address-box{
+              bottom:-101px;
+              left:-90px;
+            }
+         }
+       div.address:hover .address-box{
+            display: block;
+            z-index:10;
+         }
+       div.address:hover span{
+            bottom:-10px;
+            right:29px;
+            display:block;
+            border:9px solid transparent;
+            border-bottom-color:white;
+        }
+        /*搜索导航*/
+        ul.nav{
+            margin:8px 0;
+            padding:5px 5px;
+            li{
+              /*配合悬停箭头做相对定位*/
+              position:relative;
+              /*浮动、内边距*/
+              float:left;
+              padding:8px ;
+              b.caret{
+                /*默认隐藏*/
+                display:none;
+              }
+              a{
+                color:#fcf0f0;
+              }
+              a:hover{
+                background-color:transparent;
+              }
+            }
+            li:hover{
+               background:@base-color;
+               border-radius:5px;
+              b.caret{
+                position: absolute;
+                bottom:-16px;
+                left:30%;
+                z-index:5;
+                display:block;
+                border:9px solid transparent;
+                border-bottom-color:@base-color;
+              }
+            }
+             li.current{
+                background:@base-color;
+                border-radius:5px;
+               b.caret{
+                 position: absolute;
+                 bottom:-16px;
+                 left:30%;
+                 z-index:5;
+                 display:block;
+                 border:9px solid transparent;
+                 border-bottom-color:@base-color;
+               }
+             }
+        }
+        ul.nav:after{
+            content:"";
+            display:block;
+            clear:both;
+         }
+       div.search-box{
+            /*宽度、最小高度、背景颜色、边框倒角、内边距*/
+            width:88%;
+            min-height:30px;
+            background:@base-color;
+            border-radius:5px;
+            padding:3px;
+            /*配合搜索框做相对定位*/
+            position: relative;
+           input.txtSearch{
+               /*高度、宽度、内边距、去边框、轮廓线、边框倒角*/
+               height:30px;
+               width:90%;
+               padding:0 5px;
+               border:none;
+               outline:none;
+               border-radius:3px;
+           }
+           button.btnSearch{
+               /*宽度，高度、去边框、背景颜色、字体大小、外边距、绝对定位*/
+               width:10%;
+               height:36px;
+               border:none;
+               background:@base-color;
+               font-size:1.2em;
+               padding:0;
+               border-radius:0 5px 5px 0;
+               position:absolute;
+               top:0;
+               right:0;
+           }
+         button.btnSearch:hover{
+              background:#c14848;
+              color:#fcf0f0;
+            }
+         button.btnSearch:focus {
+               outline: none;
+             }
+       }
+    }
+/*top-main结束*/
+}
+/*3、主体部分*/
+#main{
+  width:1211px;
+  margin:0 auto;
+/*热销楼盘*/
+#hot-sell {
+  margin-bottom: 20px;
+  /*热销主体*/
+  ul.hot-sell-box{
+    height:272px;
+    >li {
+      /*相对定位*/
+      position:relative;
+      float:left;
+      width:403px;
+      height:45px;
+    >a{
+    /*左浮动，宽度、高度、行高、背景颜色、边框、下边距*/
+    float: left;
+    width: 403px;
+    height: 45px;
+    line-height: 45px;
+    background: #F1F1F1;
+    border: 1px solid @color-lighter;
+    border-top-width: 2px;
+    /*文本居中、字体大小、加粗*/
+    text-align: center;
+    font-size: 20px;
+    }
+    >a+ul{
+      /*绝对定位*/
+      position:absolute;
+      left:0;
+      bottom:-212px;
+      display:none;
+      width:1211px;
+      li {
+        /*左浮动、右外边距、下外边距、宽度、高度、配合文字做相对定位*/
+        float: left;
+        margin-right: 15px;
+        width: 24.02%;
+        div{
+          position: relative;
+        }
+      }
+      li:last-child {
+        margin: 0;
+      }
+      li img {
+        width: 100%;
+        height: 188px;
+      }
+      h2 {
+        /*绝对定位、背景颜色及透明度、宽度、高度、行高、内边距*/
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        padding: 4px;
+        font-size: 16px;
+        color: white;
+      }
+      h2 a {
+        color: white;
+      }
+      h2 a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+      h2 span {
+        float: right;
+        font-size: 14px;
+      }
+      p span {
+        color:@base-color;
+      }
+    }
+  }
+  li.current{
+    >a{
+      border-top-color: #cc0000;
+      border-bottom:transparent;
+      font-weight: bold;
+      background: white;
+      color:@color-gray-deeper;
+    }
+    >a+ul{
+      display:block;
+    }
+  }
+  /*热销主体结束*/
+}
+  /*热卖Banner部分*/
+  div.hot-sell-banner img {
+    width: 100%;
+    height: 110px;
+  }
+}
+  /*热卖Banner部分结束*/
+  /************新房部分**************/
+#new-home{
+  overflow: hidden;
+  margin-bottom:20px;
+    /*左侧栏部分*/
+    div.aside-lf{
+      /*宽度、左浮动*/
+      width:19%;
+      h2{
+        /*下边框、下外边距、字体颜色*/
+        border-bottom:4px solid #000;
+        margin-bottom:20px;
+        padding-bottom:3px;
+        color:#000;
+      }
+      >h3{
+        margin-bottom:5px;
+      }
+      /*热盘推荐*/
+      div.hot-introduce>ul{
+        padding-left:6%;
+      }
+      div.hot-introduce>span{
+        /*背景、颜色、左右内边距*/
+        color:white;
+        background:@base-color;
+        padding:0 12px 0 4px;
+      }
+      div.hot-introduce li{
+        width:81%;
+        padding:5px 0;
+        span{
+          float:right;
+        }
+      }
+      div.hot-introduce:before,ul.new-date>li:before{
+        content:"";
+        width:3px;
+        height:3px;
+        border:2px solid #ddd;
+        border-radius:50%;
+        margin-right:8px;
+        margin-bottom:2px;
+        display:inline-block;
+      }
+      ul.new-date {
+        width:90%;
+        height:255px;
+        overflow-y:scroll;
+        >li>ul{
+          /*内边距*/
+          padding-left:1%;
+        }
+        >li ul li {
+          width: 90%;
+          padding: 5px 0;
+          margin-left:6%;
+          span {
+            float: right;
+          }
+        }
+        > li > span {
+          background:@color-lighter;
+          padding: 0 12px 0 4px;
+        }
+      }
+    /*左侧栏结束*/
+  }
+    /*中间部分*/
+      .aside-mid-box{
+        width:56%;
+        height:460px;
+        >li{
+          /*配合b.line元素做相对定位*/
+          position:relative;
+          float:left;
+          width:33.33%;
+          text-align:center;
+        >span:first-child{
+          position:absolute;
+          left:0;
+          bottom:4px;
+          height:1.3em;
+          border-left:3px solid #ddd;
+        }
+        >b.line{
+          display:inline-block;
+          width:100%;
+          height:31px;
+          line-height:31px;
+          padding-bottom:3px;
+          border-bottom:4px solid #000;
+          span:last-child{
+            /*因上面有对span的设置，所以先将span默认隐藏*/
+            display:none;
+          }
+        }
+          /*新房模块中间主体部分*/
+        >ul{
+          position:absolute;
+          left:0;
+          bottom:-442px;
+          width:678px;
+          display:none;
+          padding-top:20px;
+            li{
+              float:left;
+              height:195px;
+              margin:0 16px 16px 0;
+            }
+            li div{
+              /*配合遮罩层做相对定位*/
+              position:relative;
+              overflow:hidden;
+              margin-bottom:10px;
+            }
+            li p{
+              /*绝对定位、高度、内边距、背景及透明度*/
+              position:absolute;
+              bottom:0;
+              left:0;
+              width:100%;
+              height:21%;
+              padding:5px;
+              text-align:left;
+              background:rgba(0,0,0,0.6);
+              /*字体颜色*/
+              color:white;
+              transition:height 0.3s;
+            }
+            li p a{
+              color:white;
+            }
+            li div p:hover{
+              height:100%;
+            }
+            li h4{
+              text-align:left;
+              margin-bottom:6px;
+              span{
+                float:right;
+              }
+              b{
+                color:@base-color;
+              }
+            }
+            li h6{
+              text-align:left;
+              margin-bottom:10px;
+              a{
+                color:@base-color;
+              }
+              a:hover{
+                text-decoration:underline;
+              }
+            }
+          }
+
+    }
+        >li.hover {
+          b.line {
+            display:inline-block;
+            width: 90%;
+            height:31px;
+            line-height:31px;
+            padding-bottom:3px;
+            border-bottom: 4px solid @base-color;
+            span:last-child {
+              position: absolute;
+              left: 47%;
+              bottom: 4px;
+              display: block;
+              border: 4px solid transparent;
+              border-bottom-color: @base-color;
+            }
+          }
+          >ul{display:block;}
+        }
+      }
+      /*中间部分结束*/
+   /*右侧部分*/
+    .aside-rt{
+      width:25%;
+      h2{
+        border-bottom:4px solid #000;
+        padding-bottom:3px;
+        margin-bottom:20px;
+      }
+      h3{
+        text-align:center;
+        margin:15px 0;
+        a{
+          color:@base-color;
+        }
+        a:hover{
+          text-decoration:underline;
+        }
+      }
+      p{
+        padding-left:3px;
+        margin-bottom:5px;
+      }
+      ul {
+        margin-bottom:20px;
+        li{
+          margin:5px 0;
+          line-height:1.6em;
+          list-style:disc inside;
+      }
+      }
+    }
+  }
+  /************新房部分结束**************/
+/*二手房部分*/
+#resold-home{
+  overflow: hidden;
+  /*左侧栏部分*/
+  div.aside-lf{
+    /*宽度、左浮动*/
+    width:19%;
+    h2{
+      /*下边框、下外边距、字体颜色*/
+      border-bottom:4px solid #000;
+      margin-bottom:20px;
+      padding-bottom:3px;
+      color:#000;
+    }
+    ul li{
+      width:95%;
+      margin:8px 0;
+      em{
+        display:inline-block;
+        border-left:2px solid @color-lighter;
+        height:12px;
+        margin:-1px 3px;
+      }
+    }
+
+    /*左侧栏结束*/
+  }
+  /*中间部分*/
+  .aside-mid-box{
+    width:56%;
+    height:460px;
+    >li{
+      float:left;
+      /*配合b.line元素做相对定位*/
+      position:relative;
+      width:33.33%;
+      text-align:center;
+      >span:first-child{
+        position:absolute;
+        left:0;
+        bottom:4px;
+        height:1.3em;
+        border-left:3px solid @color-lighter;
+      }
+      >b.line{
+        display:inline-block;
+        width:100%;
+        height:31px;
+        line-height:31px;
+        padding-bottom:3px;
+        border-bottom:4px solid #000;
+        span:last-child{
+          /*因上面有对span的设置，所以先将span默认隐藏*/
+          display:none;
+        }
+      }
+      /*新房模块中间主体部分*/
+      >ul{
+        position:absolute;
+        left:0;
+        display:none;
+        bottom:-442px;
+        width:678px;
+        padding-top:20px;
+        li{
+          float:left;
+          height:195px;
+          margin:0 16px 16px 0;
+        }
+        li div{
+          /*配合遮罩层做相对定位*/
+          position:relative;
+          overflow:hidden;
+          margin-bottom:10px;
+        }
+        li p{
+          /*绝对定位、高度、内边距、背景及透明度*/
+          position:absolute;
+          bottom:0;
+          left:0;
+          width:100%;
+          height:21%;
+          padding:5px;
+          text-align:left;
+          background:rgba(0,0,0,0.6);
+          /*字体颜色*/
+          color:white;
+          transition:height 0.3s;
+        }
+        li p a{
+          color:white;
+        }
+        li div p:hover{
+          height:100%;
+        }
+        li h4{
+          text-align:left;
+          margin-bottom:6px;
+          span{
+            float:right;
+          }
+          b{
+            color:@base-color;
+          }
+        }
+        li h6{
+          text-align:left;
+          margin-bottom:10px;
+          a{
+            color:@base-color;
+          }
+          a:hover{
+            text-decoration:underline;
+          }
+        }
+      }
+
+    }
+    >li.hover {
+      b.line {
+        display:inline-block;
+        width: 90%;
+        height:31px;
+        line-height:31px;
+        padding-bottom:3px;
+        border-bottom: 4px solid @base-color;
+        span:last-child {
+          position: absolute;
+          left: 47%;
+          bottom: 4px;
+          display: block;
+          border: 4px solid transparent;
+          border-bottom-color: @base-color;
+        }
+      }
+      >ul{display:block;}
+    }
+  }
+    /*中间部分结束*/
+  /*右侧部分*/
+  .aside-rt{
+    width:25%;
+    h2{
+      border-bottom:4px solid #000;
+      padding-bottom:3px;
+      margin-bottom:20px;
+    }
+    h3{
+      text-align:center;
+      margin:15px 0;
+      a{
+        color:@base-color;
+      }
+      a:hover{
+        text-decoration:underline;
+      }
+    }
+    p{
+      padding-left:3px;
+      margin-bottom:5px;
+    }
+    ul {
+      margin-bottom:20px;
+      li{
+        margin:5px 0;
+        line-height:1.6em;
+        list-style:disc inside;
+      }
+    }
+  }
+}
+/*二手房部分结束*/
+}
+/*友情链接*/
+#foot-box{
+  /*宽度，居中，下边框,下内外边距*/
+  width:1211px;
+  margin:0 auto;
+  border-bottom:1px solid #ddd;
+  padding-bottom:20px;
+  margin-bottom:20px;
+  overflow: hidden;
+  h2{
+    width:100%;
+    border-bottom:4px solid #000;
+    margin-bottom:20px;
+    padding:0 6px 3px 0;
+    color:@color-gray-deeper;
+    a{
+    float:right;
+    font-size:16px;
+    color:@color-gray-deeper;
+    }
+    a:hover{
+      color:@base-color;
+    }
+  }
+  ul{
+    padding:0 20px;
+    li{
+      /*宽度、浮动*/
+      float:left;
+      width:16.6%;
+      height:2.2em;
+      line-height:2.2em;
+      text-align:left;
+      a:hover{
+       text-decoration:underline;
+      }
+    }
+  }
+}
+/*友情链接结束*/
+/*底部版权部分*/
+@import "footer.less";
+/*底部版权部分结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
